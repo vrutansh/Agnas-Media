@@ -14,8 +14,8 @@ const Showreel = () => {
             <Marquee/>
         </div>
 
-        <div className='Fullvideo h-[5.5rem] w-[5.5rem] rounded-full bg-red-500 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-[50%]'>
-            <h1 className='text-white text-sm text-center py-6'>Full Video</h1>
+        <div className='Fullvideo md:h-[12rem] md:w-[12rem] h-[5.5rem] w-[5.5rem] rounded-full bg-red-500 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-[50%]'>
+            <h1 className='text-white md:text-3xl md:py-16 text-sm text-center py-6'>Full Video</h1>
         </div>
     </div>
   )
