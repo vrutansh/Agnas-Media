@@ -30,7 +30,7 @@ export function ALogo(props) {
     tl.current.to(
       ref.current.position,
       {
-        duration: 8,
+        duration: 100,
         z: 20,
       },
       0
