@@ -17,20 +17,28 @@ function Marquee() {
 
   //  </div>
      
-  <div className='w-full py-10 text-white overflow-hidden'>
-    <div className='text flex'>
+//   <div className='w-full py-10 text-white overflow-hidden'>
+//     <div className='text flex'>
 
-        <motion.h1 initial={{x:"0"}} animate={{x:"-50vw"}} transition={{ease:"linear", repeat: Infinity, duration: 6}} className='text-[2rem] md:text-[5rem] text-gray-300 leading-none whitespace-nowrap'> Showreel -</motion.h1>
+//         <motion.h1 initial={{x:"0"}} animate={{x:"-50vw"}} transition={{ease:"linear", repeat: Infinity, duration: 6}} className='text-[2rem] md:text-[5rem] text-gray-300 leading-none whitespace-nowrap'> Showreel -</motion.h1>
 
-        <motion.h1 initial={{x:"0"}} animate={{x:"-50vw"}} transition={{ease:"linear", repeat: Infinity, duration: 6}} className='text-[2rem] md:text-[5rem] text-gray-300 leading-none whitespace-nowrap'> Showreel -</motion.h1>
+//         <motion.h1 initial={{x:"0"}} animate={{x:"-50vw"}} transition={{ease:"linear", repeat: Infinity, duration: 6}} className='text-[2rem] md:text-[5rem] text-gray-300 leading-none whitespace-nowrap'> Showreel -</motion.h1>
 
-        <motion.h1 initial={{x:"0"}} animate={{x:"-50vw"}} transition={{ease:"linear", repeat: Infinity, duration: 6}} className='text-[2rem] md:text-[5rem] text-gray-300 leading-none whitespace-nowrap'> Showreel -</motion.h1>
+//         <motion.h1 initial={{x:"0"}} animate={{x:"-50vw"}} transition={{ease:"linear", repeat: Infinity, duration: 6}} className='text-[2rem] md:text-[5rem] text-gray-300 leading-none whitespace-nowrap'> Showreel -</motion.h1>
 
-        <motion.h1 initial={{x:"0"}} animate={{x:"-50vw"}} transition={{ease:"linear", repeat: Infinity, duration: 6}} className='text-[2rem] md:text-[5rem] text-gray-300 leading-none whitespace-nowrap'> Showreel -</motion.h1>
+//         <motion.h1 initial={{x:"0"}} animate={{x:"-50vw"}} transition={{ease:"linear", repeat: Infinity, duration: 6}} className='text-[2rem] md:text-[5rem] text-gray-300 leading-none whitespace-nowrap'> Showreel -</motion.h1>
         
-    </div>
-</div>
+//     </div>
+// </div>
 
+<div className='w-full  text-white overflow-hidden'>
+    <motion.div initial={{x: "0%"}} animate={{x: "-50%"}} transition={{ease: "linear", repeat: Infinity, duration: 6}} className='text px-2 mr-2 flex flex-nowrap'>
+        <h1 className='text-[2rem] md:text-[5rem] text-gray-300 leading-none whitespace-nowrap'> Showreel -</h1>
+        <h1 className='text-[2rem] md:text-[5rem] text-gray-300 leading-none whitespace-nowrap'> Showreel -</h1>
+        <h1 className='text-[2rem] md:text-[5rem] text-gray-300 leading-none whitespace-nowrap'> Showreel -</h1>
+        <h1 className='text-[2rem] md:text-[5rem] text-gray-300 leading-none whitespace-nowrap'> Showreel -</h1>
+    </motion.div>
+</div>
 
   )
 }
