@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react'
+import Showreel from './components/Showreel'
+import Marquee from './components/Marquee'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        Agnas Media
-      </div>
+        <div className='min-h-screen w-full bg-black'>
+           <Showreel/>
+           
+        </div>
     </>
   )
 }
