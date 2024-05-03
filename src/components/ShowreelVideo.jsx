@@ -68,8 +68,8 @@ export const ShowreelVideo = forwardRef((props, forwardRef) => {
         tl.current.to(
           ref.current.position,
           {
-            duration: 10,
-            z: 2,
+            duration: 8,
+            z: 5,
           },
           0
         );
@@ -87,7 +87,7 @@ export const ShowreelVideo = forwardRef((props, forwardRef) => {
 
   
   return (
-    <mesh ref={ref} rotation={[0, -Math.PI, 0]} position={[0, 0, -20]} {...props}>
+    <mesh ref={ref} rotation={[-0.12, -Math.PI, 0]} position={[0, 0.5, -20]} {...props}>
       <planeGeometry args={[16, 10]} />
       <meshBasicMaterial>
         <videoTexture attach="map" args={[video]} colorSpace={SRGBColorSpace} />

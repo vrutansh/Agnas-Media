@@ -1,7 +1,7 @@
 export function Content() {
     return (
       <>
-        <div className="char" style={{ position: 'absolute', top: 40, left: 40, color: 'white', fontSize: '5em' }}>
+        <div className="char" style={{ position: 'absolute', top: 5, left: 40, color: 'white', fontSize: '5em' }}>
           Agnas Media
         </div>
         <div style={{ position: 'absolute', top: 40, right: 160, fontSize: '15px', textAlign: 'right',  color: 'white' }}>
