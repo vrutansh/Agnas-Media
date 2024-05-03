@@ -11,7 +11,7 @@ const Showreel = () => {
 
         <div className='marquee absolute top-1/2 left-1/2 -translate-x-1/2 
         -translate-y-[60%] '>
-            <Marquee/>
+            {/* <Marquee/> */}
         </div>
 
         {/* <div className='Fullvideo md:h-[12rem] md:w-[12rem] h-[4.5rem] w-[4.5rem] rounded-full bg-red-700 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-[50%]'>
