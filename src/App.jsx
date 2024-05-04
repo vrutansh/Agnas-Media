@@ -7,6 +7,14 @@ import { Fluid } from '@whatisjery/react-fluid-distortion'
 import LandingPage from './components/LandingPage'
 import { LandingPageContent } from './components/Content'
 
+import * as THREE from 'three'
+import { useRef, useState } from 'react'
+import { useFrame } from '@react-three/fiber'
+import { Image, Environment, useScroll, useTexture } from '@react-three/drei'
+import { easing } from 'maath'
+import './components/utils'
+import WorkScroller from './components/WorkScroller'
+
 function App() {
   return (
     <>
@@ -34,12 +42,14 @@ function App() {
                       />
                   </EffectComposer>
             <ScrollControls pages={7}>
-
+              <Scroll>
                 <LandingPageContent />
+              </Scroll>
 
-                {/* <ServicePageContent /> */}
-                
+              {/* <Scroll> */}
                 <LandingPage />
+                <WorkScroller />
+              {/* </Scroll> */}
 
                 <Preload />
             </ScrollControls>

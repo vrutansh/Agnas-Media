@@ -25,7 +25,7 @@ export const ShowreelVideo = forwardRef((props, forwardRef) => {
           ref.current.position,
           {
             duration: 8,
-            z: 5,
+            z: 6,
           },
           0
         );
