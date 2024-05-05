@@ -20,32 +20,32 @@ export const ShowreelVideo = forwardRef((props, forwardRef) => {
   useLayoutEffect(() => {
         tl.current = gsap.timeline();
     
+        tl.current.to(
+          ref.current.rotation,
+          {
+            duration: 0.18,
+            y: 0,
+          },
+          0
+        );
         // LOGO ANIMATION
         tl.current.to(
           ref.current.position,
           {
-            duration: 8,
+            duration: 0.2,
             z: 6,
           },
           0
         );
 
-        tl.current.to(
-          ref.current.rotation,
-          {
-            duration: 7,
-            y: 0,
-          },
-          0
-        );
 
         tl.current.to(
           ref.current.position, 
           { 
-            y: 15, 
-            duration: 7 
+            y: 35, 
+            duration: 0.5,
           }, 
-          ">1"
+          ">0.07"
         );
 
       }, [])

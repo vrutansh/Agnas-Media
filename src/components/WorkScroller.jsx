@@ -114,7 +114,7 @@ export default function WorkScroller () {
   // }, []);
   return(
     <>
-          <Rig rotation={[0, 0, 0.15]} scale={4} position={[0, -140, 20]}>
+          <Rig rotation={[0, 0, 0.15]} scale={4} position={[0, -140, -7]}>
             <Carousel />
           </Rig>
           {/* <Banner position={[0, -140, 8]} /> */}
@@ -141,18 +141,28 @@ function Rig(props) {
     tl.current.to(
       ref.current.position,
       {
-        duration: 8,
-        y: 0,
+        duration: 1,
+        y: 0.5,
       },
-      0
+      "<200"
     );
+    // tl.current.to(
+    //   ref.current.position,
+    //   {
+    //     duration: 8,
+    //     z: -7,
+    //   },
+    //   0
+    // );
+
+
     tl.current.to(
-      ref.current.position,
-      {
-        duration: 8,
-        z: -7,
-      },
-      0
+      ref.current.position, 
+      { 
+        y: 35, 
+        duration: 7 
+      }, 
+      ">4"
     );
   }, []);
   return <group ref={ref} {...props} />

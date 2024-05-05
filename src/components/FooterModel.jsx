@@ -5,20 +5,14 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { easing } from 'maath'
 import gsap from "gsap";
 
-export function ALogo(props) {
+export function FooterModel(props) {
     const ref = useRef()
     const scroll = useScroll()
   const scrollref = useRef();
   const tl = useRef();
 
-  const gltf = useLoader(GLTFLoader, './models/agnas1.glb');
+  const gltf = useLoader(GLTFLoader, './models/gargoyle.glb');
 
-  useFrame((state, delta) => {
-    // ref.current.rotation.y = -scroll.offset * (Math.PI * 2) // Rotate contents
-    // state.events.update() // Raycasts every frame rather than on pointer-move
-    easing.damp3(state.camera.position, [-state.pointer.x * 2, state.pointer.y + 1.5, 10], 0.3, delta) // Move camera
-    state.camera.lookAt(0, 0, 0) // Look at center
-  })
   useFrame(() => {
     tl.current.seek(scroll.offset * tl.current.duration());
   });
@@ -30,8 +24,8 @@ export function ALogo(props) {
     tl.current.to(
       ref.current.position,
       {
-        duration: 0.4,
-        z: 80,
+        duration: 100,
+        y: -1.2,
       },
       0
     );
@@ -39,5 +33,5 @@ export function ALogo(props) {
  
 
 
-  return <group ref={ref} scale={18} position={[0, -6, 0]} rotation={[89.5, 0, 0]}><primitive object={gltf.scene} /></group> ;
+  return <group ref={ref} scale={16} position={[0, -300, 7]} rotation={[0, -1.5, 0]}><primitive object={gltf.scene} /></group> ;
 }

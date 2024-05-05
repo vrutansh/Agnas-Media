@@ -4,6 +4,8 @@ import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
 
 import { ALogo } from './ALogo'
 import { ShowreelVideo } from './ShowreelVideo'
+import WorkScroller from './WorkScroller'
+import { FooterModel } from './FooterModel'
 
 function LandingPage() {
 
@@ -23,6 +25,8 @@ function LandingPage() {
       />
       <ALogo className="logo" />
       <ShowreelVideo />
+      <WorkScroller />
+      <FooterModel />
 
     </>
   )

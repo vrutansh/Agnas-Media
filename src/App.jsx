@@ -13,7 +13,7 @@ import { useFrame } from '@react-three/fiber'
 import { Image, Environment, useScroll, useTexture } from '@react-three/drei'
 import { easing } from 'maath'
 import './components/utils'
-import WorkScroller from './components/WorkScroller'
+
 
 function App() {
   return (
@@ -41,14 +41,14 @@ function App() {
                           blend={5.0}
                       />
                   </EffectComposer>
-            <ScrollControls pages={7}>
-              <Scroll>
+            <ScrollControls pages={20}>
+              <Scroll html>
                 <LandingPageContent />
               </Scroll>
 
               {/* <Scroll> */}
                 <LandingPage />
-                <WorkScroller />
+                
               {/* </Scroll> */}
 
                 <Preload />
