@@ -147,6 +147,57 @@ export function LandingPageContent() {
               </div>
         </div>
 
+        <div style={{ width: "100%", position: 'absolute', top: `1560vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '4em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{width:'60%' , textAlign:'center'}}>
+            Awards - Recognition
+          </div>
+        </div>
+
+        <div style={{ position: 'absolute', top: `1610vh`, left: '14vw', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.7em', width:'54vw', lineHeight:'3.7vw'}}>
+        <h1 style={{}}>We are proud to be the 2019 "Studio of the Year" at the CSS Design Awards.Our project was also honored as "E-Commerce of the Year" by the Awwwards in 2022.</h1>
+       </div>
+
+       <div style={{width:'55vw',position: 'absolute', top: `1650vh`, right: '0', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.5em'}}>
+
+            <h1 style={{fontSize:'1.5em'}}>Awwwards <span style={{marginLeft:'24vw'}}>34</span></h1>
+            <svg style={{ width:'80%',}} width="100%" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="0" x2="100%" y2="0" stroke="white" strokeWidth="4" />
+           </svg>
+           <h3 style={{fontSize:'0.8em'}}>Site of the Day <span style={{marginLeft:'27.7vw'}}>09</span></h3>
+           <h3 style={{fontSize:'0.8em'}}>Developer Award<span style={{marginLeft:'26.7vw'}}>04</span></h3>
+           <h3 style={{fontSize:'0.8em'}}>Honorable Mention <span style={{marginLeft:'25.4vw'}}>11</span></h3>
+           <h3 style={{fontSize:'0.8em'}}>Ecommerce of the year <span style={{marginLeft:'23.4vw'}}>05</span></h3>
+           <h3 style={{fontSize:'0.8em'}}>Mobile of the Week <span style={{marginLeft:'25.6vw'}}>01</span></h3>
+       </div>
+
+       <div style={{width:'55vw',position: 'absolute', top: `1685vh`,marginTop:'4.5vh', right: '0', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.5em'}}>
+
+            <h1 style={{fontSize:'1.5em'}}>the CSS Design Awards <span style={{marginLeft:'11vw'}}>34</span></h1>
+            <svg style={{ width:'80%',}} width="100%" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="0" x2="100%" y2="0" stroke="white" strokeWidth="4" />
+           </svg>
+           <h3 style={{fontSize:'0.8em'}}>Site of the Day <span style={{marginLeft:'27.7vw'}}>09</span></h3>
+           <h3 style={{fontSize:'0.8em'}}>Developer Award<span style={{marginLeft:'26.7vw'}}>04</span></h3>
+           <h3 style={{fontSize:'0.8em'}}>Honorable Mention <span style={{marginLeft:'25.4vw'}}>11</span></h3>
+           <h3 style={{fontSize:'0.8em'}}>Ecommerce of the year <span style={{marginLeft:'23.4vw'}}>05</span></h3>
+           <h3 style={{fontSize:'0.8em'}}>Mobile of the Week <span style={{marginLeft:'25.6vw'}}>01</span></h3>
+       </div>
+
+       <div style={{width:'55vw',position: 'absolute', top: `1725vh`,marginTop:'4.5vh', right: '0', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.5em'}}>
+
+            <h1 style={{fontSize:'1.5em'}}>the FWA <span style={{marginLeft:'25.7vw'}}>34</span></h1>
+            <svg style={{ width:'80%',}} width="100%" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="0" x2="100%" y2="0" stroke="white" strokeWidth="4" />
+           </svg>
+           <h3 style={{fontSize:'0.8em'}}>Site of the Day <span style={{marginLeft:'27.7vw'}}>09</span></h3>
+           <h3 style={{fontSize:'0.8em'}}>Developer Award<span style={{marginLeft:'26.7vw'}}>04</span></h3>
+           <h3 style={{fontSize:'0.8em'}}>Honorable Mention <span style={{marginLeft:'25.4vw'}}>11</span></h3>
+           <h3 style={{fontSize:'0.8em'}}>Ecommerce of the year <span style={{marginLeft:'23.4vw'}}>05</span></h3>
+           <h3 style={{fontSize:'0.8em'}}>Mobile of the Week <span style={{marginLeft:'25.6vw'}}>01</span></h3>
+
+
+       </div>
+        
       </Scroll>
       
     </>

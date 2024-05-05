@@ -25,7 +25,7 @@ export function FooterModel(props) {
       ref.current.position,
       {
         duration: 100,
-        y: -1.2,
+        y: -1.4,
       },
       0
     );
