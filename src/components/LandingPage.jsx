@@ -25,7 +25,7 @@ function LandingPage() {
       />
       <ALogo className="logo" />
       <ShowreelVideo />
-      <WorkScroller />
+      {/* <WorkScroller /> */}
       <FooterModel />
 
     </>

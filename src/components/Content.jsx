@@ -97,7 +97,55 @@ export function LandingPageContent() {
         Recent Works
         </div>
 
-      
+        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:"35%",bottom:"-30%", overflow:"hidden", top: "1180vh" }}>
+             <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/project/Alef/alef-preview.jpg" alt="" srcset="" />
+
+              <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
+                  <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
+                  <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
+                   <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
+              </div>
+        </div> 
+
+        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:"9%", overflow:"hidden", top: "1280vh" }}>
+             <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/project/ProtoHomes/protohome-cover-min.jpg" alt="" srcset="" />
+
+              <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
+                  <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
+                  <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
+                   <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
+              </div>
+        </div>
+
+        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', right:"11%",top:"1320vh", overflow:"hidden" }}>
+             <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/portfolio/depositprev-progressive.jpg" alt="" srcset="" />
+
+              <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
+                  <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
+                  <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
+                   <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
+              </div>
+        </div>
+
+        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:"9%", top: "1390vh", overflow:"hidden" }}>
+             <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/portfolio/depositprev-progressive.jpg" alt="" srcset="" />
+
+              <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
+                  <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
+                  <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
+                   <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
+              </div>
+        </div>
+
+        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', right:"11%",top:"1440vh", overflow:"hidden" }}>
+             <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/portfolio/depositprev-progressive.jpg" alt="" srcset="" />
+
+              <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
+                  <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
+                  <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
+                   <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
+              </div>
+        </div>
 
       </Scroll>
       
