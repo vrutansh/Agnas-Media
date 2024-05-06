@@ -195,7 +195,38 @@ export function LandingPageContent() {
            <h3 style={{fontSize:'0.8em'}}>Ecommerce of the year <span style={{marginLeft:'23.4vw'}}>05</span></h3>
            <h3 style={{fontSize:'0.8em'}}>Mobile of the Week <span style={{marginLeft:'25.6vw'}}>01</span></h3>
 
+       </div>
 
+       <div style={{width:'100%',position: 'absolute', padding:'1vw', display:'flex', gap:'2vw', top:'1989vh',transform: `translate3d(0,-100%,0)`, color:'white', fontSize:'0.88vw', lineHeight:'1vw' }}>
+            <div style={{width:'20%', marginLeft:'1.3vw' }}>
+               <h1>Heroes from Ukraine</h1>
+               <h1>Main Office</h1>
+               <h1>Dnipro, 49000</h1>
+               <h2>hello@agnasmedia.team</h2>
+            </div>
+            <div style={{width:'20%', }}>
+               <h1>Based in USA</h1>
+               <h1>Los Angeles, 90210</h1>
+               <h1>California</h1>
+               <h2>la@agnasmedia.team</h2>
+            </div>
+            <div style={{width:'20%', }}>
+               <h1>Support from Poland </h1>
+               <h1>Los Angeles, 90210</h1>
+               <h1>California</h1>
+               <h2>la@agnasmedia.team</h2>
+            </div>
+            <div style={{width:'20%', paddingLeft:'2.5vw', marginLeft:'2vw' }}>
+              <h1>Facebook</h1>
+              <h1>Instagram</h1>
+              <h1>Dribble</h1>
+              <h1>Behance</h1>
+            </div>
+            <div style={{width:'20%', marginRight:'2vw' }}>
+              <h2>Business inquiries</h2>
+              <h2>hello@agnasmedia.com</h2>
+              <h2 style={{marginTop:'4vw'}}>Be Advance</h2>
+            </div>
        </div>
         
       </Scroll>
