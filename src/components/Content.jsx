@@ -1,15 +1,78 @@
 import { Scroll } from "@react-three/drei"
 import "../App.css"
 import Marquee from "./Marquee"
+import { easeInOut, motion, stagger } from "framer-motion"
 
 export function LandingPageContent() {
   return (
     <>
       <Scroll html style={{ width: '100%', height:'100%' }}>
-        <h1 style={{ position: 'absolute', top: `14vh`, left: '3vw',transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '6em' }}>Agnas Media&#174;</h1>
-        <h1 style={{ position: 'absolute', top: `25vh`, left: '3vw',transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '6em' }}>Digital Design</h1>
-        <h1 style={{ position: 'absolute', top: `36vh`, left: '3vw',transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '6em' }}>Boutique with Focus</h1>
-        <h1 style={{ position: 'absolute', top: `47vh`, left: '3vw',transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '6em' }}>on Aesthetics</h1>
+
+        <motion.h1 initial={{rotate:3, y:'40%', opacity:0}}
+                   delay={stagger(1)}
+                   whileInView={{rotate: 0 , y: 0, opacity: 1}}
+                   transition={{ease:easeInOut,
+                               duration:1.4
+                   }}
+                style={{ position: 'absolute', top: `12vh`, left: '3vw',transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '6em' }}>
+                     Agnas 
+        </motion.h1>
+
+
+        <motion.h1 initial={{rotate:4, y:'40%', opacity:0}}
+                   delay={stagger(1)}
+                   whileInView={{rotate: 0 , y: 0, opacity: 1}}
+                   transition={{ease:easeInOut,
+                               duration:1.4
+                   }}
+               style={{ position: 'absolute', top: `12vh`, left: '21vw',transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '6em' }}>Media&#174;
+        </motion.h1>
+
+        <motion.h1 initial={{rotate:4, y:'40%', opacity:0}}
+                   delay={stagger(1)}
+                   whileInView={{rotate: 0 , y: 0, opacity: 1}}
+                   transition={{ease:easeInOut,
+                               duration:1.5
+                   }}
+
+        style={{ position: 'absolute', top: `24vh`, left: '3vw',transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '6em' }}>Digital</motion.h1>
+
+        <motion.h1 initial={{rotate:4, y:'40%', opacity:0}}
+                   delay={stagger(1)}
+                   whileInView={{rotate: 0 , y: 0, opacity: 1}}
+                   transition={{ease:easeInOut,
+                               duration:1.5
+                   }}
+              style={{ position: 'absolute', top: `24vh`, left: '22vw',transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '6em' }}> Design</motion.h1>
+
+
+        <motion.h1  initial={{rotate:4, y:'40%', opacity:0}}
+                   delay={stagger(1.1)}
+                   whileInView={{rotate: 0 , y: 0, opacity: 1}}
+                   transition={{ease:easeInOut,
+                               duration:1.7
+                   }}
+         style={{ position: 'absolute', top: `35vh`, left: '3vw',transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '6em' }}>Boutique </motion.h1>
+        
+        <motion.h1  initial={{rotate:4, y:'40%', opacity:0}}
+                   delay={stagger(1.1)}
+                   whileInView={{rotate: 0 , y: 0, opacity: 1}}
+                   transition={{ease:easeInOut,
+                               duration:1.8
+                   }}
+         style={{ position: 'absolute', top: `36vh`, left: '29vw',transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '6em' }}>with </motion.h1>
+
+        <motion.h1  initial={{rotate:4, y:'40%', opacity:0}}
+                   delay={stagger(1.1)}
+                   whileInView={{rotate: 0 , y: 0, opacity: 1}}
+                   transition={{ease:easeInOut,
+                               duration:1.9
+                   }}
+         style={{ position: 'absolute', top: `45vh`, left: '3vw',transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '6em' }}>Focus </motion.h1> 
+
+        {/* <h1 style={{ position: 'absolute', top: `58vh`, left: '3vw',transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '6em' }}>on </h1>  
+        
+        <h1 style={{ position: 'absolute', top: `47vh`, left: '3vw',transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '6em' }}>Aesthetics</h1> */}
 
         <div style={{ position: 'absolute', top: `8vh`, right: '20vw', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.5em' }}>Portfolio</div>
         <div style={{ position: 'absolute', top: `8vh`, right: '15vw', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.5em' }}>Agency</div>
