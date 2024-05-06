@@ -1,4 +1,6 @@
 import { Scroll } from "@react-three/drei"
+import "../App.css"
+import Marquee from "./Marquee"
 
 export function LandingPageContent() {
   return (
@@ -20,6 +22,10 @@ export function LandingPageContent() {
         With a wealth of experience and expertise in the field of <br />
         digital product development, we understand how to design <br />
         user-friendly interfaces that captivate and engage audiences.
+        </div>
+
+        <div className="marquee" style={{ width: "100%", position: 'absolute', top: `550vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '4em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <Marquee first={"Showreel"} second={"Showreel"}/>
         </div>
 
         <div style={{ width: "100%", position: 'absolute', top: `880vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '4em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -147,10 +153,8 @@ export function LandingPageContent() {
               </div>
         </div>
 
-        <div style={{ width: "100%", position: 'absolute', top: `1560vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '4em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <div style={{width:'60%' , textAlign:'center'}}>
-            Awards - Recognition
-          </div>
+        <div className="marquee" style={{ width: "100%", position: 'absolute', top: `1560vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '4em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <Marquee first={"Awards"} second={"Recognition"}/>
         </div>
 
         <div style={{ position: 'absolute', top: `1610vh`, left: '14vw', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.7em', width:'54vw', lineHeight:'3.7vw'}}>
@@ -196,6 +200,10 @@ export function LandingPageContent() {
            <h3 style={{fontSize:'0.8em'}}>Mobile of the Week <span style={{marginLeft:'25.6vw'}}>01</span></h3>
 
        </div>
+
+       <div className="marquee" style={{ width: "100%", position: 'absolute', top: `1950vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '4em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <Marquee first={"Contact Us"} second={"Let's Talk"}/>
+        </div>
 
        <div style={{width:'100%',position: 'absolute', padding:'1vw', display:'flex', gap:'2vw', top:'1989vh',transform: `translate3d(0,-100%,0)`, color:'white', fontSize:'0.88vw', lineHeight:'1vw' }}>
             <div style={{width:'20%', marginLeft:'1.3vw' }}>

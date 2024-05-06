@@ -49,15 +49,6 @@ function Rig(props) {
       0
     );
 
-
-    // tl.current.to(
-    //   ref.current.position, 
-    //   { 
-    //     y: 35, 
-    //     duration: 7 
-    //   }, 
-    //   ">1"
-    // );
   }, []);
   return <group ref={ref} {...props} />
 }
