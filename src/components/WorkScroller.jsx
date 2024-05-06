@@ -44,7 +44,7 @@ function Rig(props) {
       ref.current.position,
       {
         duration: 15,
-        z: -8,
+        z: -12,
       },
       0
     );
