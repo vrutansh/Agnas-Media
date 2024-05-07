@@ -21,3 +21,33 @@
     display: inline-block;
     animation: 5s slide infinite linear;
 }
+
+.heading{
+    font-size: 6em;
+}
+
+@media (min-width: 768px) {
+    .heading {
+        /* background-color: rgb(255, 0, 123); */
+        font-size: 6.8vw;
+        margin-left: 5%; 
+        margin-top: 2vw;
+    }
+
+    #media {
+        margin-left: 8%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        /* background-color: rgb(255, 0, 123); */
+        font-size: 12vw;
+        margin-left: 1%; 
+        margin-top: 0.5vw; /* Adjusted margin-top */
+    }
+
+    #media {
+        margin-left: 23.5%; 
+    }
+}
