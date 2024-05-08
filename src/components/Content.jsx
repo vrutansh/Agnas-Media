@@ -9,99 +9,77 @@ export function LandingPageContent() {
     <>
       <Scroll html style={{ width: '100%', height:'100%' }}>
 
-        <motion.h1 className="heading"
+        {/* <motion.h1 className="heading"
                   initial={{rotate:-15, y:'-55%', opacity:0, }}  
                   whileInView={{rotate: 0 , y: 0, opacity: 1}}
                   
                   transition={{ease:[0.22, 1, 0.36, 1],duration:3}}
                   style={{ position: 'absolute', top: `4vh`, left: '3vw',transform: `translate3d(0,-100%,0)`, color:'white'}}>
                 
-                     Agnas 
-        </motion.h1>
-       
+                     Agnas Media&#174; <br/>
+                     Digital Design <br/>
+                     Boutique with Focus <br/>
+                     on Aesthetics      
+        </motion.h1> */}
+        <motion.div
+          className="heading"
+          initial={{ rotate: -15, y: '-55%', opacity: 0 }}
+          whileInView={{ rotate: 0, y: 0, opacity: 1 }}
+          transition={{ ease: [0.22, 1, 0.36, 1], duration: 4, delay: 0 }}
+          style={{
+            position: 'absolute',
+            top: '4vh',
+            left: '3vw',
+            transform: `translate3d(0,-100%,0)`,
+            color: 'white'
+          }}
+        >
+          <motion.span
+            style={{ margin: 0 }}
+            initial={{ opacity: 0, y: '-15px' }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1 }}
+          >
+            Agnas Media® <br />
+          </motion.span>
+          <motion.span
+            style={{ margin: 0 }}
+            initial={{ opacity: 0, y: '-15px' }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 2 }}
+          >
+            Digital Design <br />
+          </motion.span>
+          <motion.span
+            style={{ margin: 0 }}
+            initial={{ opacity: 0, y: '-15px' }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 3 }}
+          >
+            Boutique with Focus <br />
+          </motion.span>
+          <motion.span
+            style={{ margin: 0 }}
+            initial={{ opacity: 0, y: '-15px' }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 4 }}
+          >
+            on Aesthetics
+          </motion.span>
+        </motion.div>
 
-        <motion.h1 className="heading"
-                   id="media"
-                   initial={{rotate:-15, y:'-55%', opacity:0}}
-                   whileInView={{rotate: 0 , y: 0, opacity: 1}}
-                   transition={{ease:[0.22, 1, 0.36, 1],duration:3}}
-                   style={{ position: 'absolute', top: `4vh`, left: '20vw',transform: `translate3d(0,-100%,0)`, color:'white'}}>
 
-                    Media&#174;
-        </motion.h1>
 
-        <motion.h1 className="heading"
-                   initial={{rotate:-15, y:'-55%', opacity:0}}
-                   whileInView={{rotate: 0 , y: 0, opacity: 1}}
-                   transition={{ease:[0.22, 1, 0.36, 1],duration:3}}
-                   style={{ position: 'absolute', top: `16vh`, left: '3vw',transform: `translate3d(0,-100%,0)`, color:'white'}}>
+        <div className="elem1" style={{ position: 'absolute', top: `8vh`, right: '20vw', transform: `translate3d(0,-100%,0)`, color:'white', }}>Portfolio</div>
+        <div className="elem2" style={{ position: 'absolute', top: `8vh`, right: '15vw', transform: `translate3d(0,-100%,0)`, color:'white', }}>Agency</div>
+        <div className="elem3" style={{ position: 'absolute', top: `8vh`, right: '10vw', transform: `translate3d(0,-100%,0)`, color:'white', }}>Services</div>
+        <div className="elem4" style={{ position: 'absolute', top: `8vh`, right: '5vw', transform: `translate3d(0,-100%,0)`, color:'white', }}>Contact</div> 
+        <div className="menu" style={{ position: 'absolute', top: `8vh`, right: '5vw', transform: `translate3d(0,-100%,0)`, color:'white',  }}>
 
-                    Digital
-        </motion.h1>
+          <h3>Menu</h3>
+        </div>
 
-        <motion.h1 className="heading"
-                   id="media"
-                   initial={{rotate:-15, y:'-55%', opacity:0}}
-                   whileInView={{rotate: 0 , y: 0, opacity: 1}}
-                   transition={{ease:[0.22, 1, 0.36, 1],duration:3}}
-                   style={{ position: 'absolute', top: `16vh`, left: '22vw',transform: `translate3d(0,-100%,0)`, color:'white'}}>
-                    
-                  Design
-        </motion.h1>
-
-        <motion.h1 className="heading"
-                   initial={{rotate:-15, y:'-55%', opacity:0}}
-                   whileInView={{rotate: 0 , y: 0, opacity: 1}}
-                   transition={{ease:[0.22, 1, 0.36, 1],duration:3}}
-                  style={{ position: 'absolute', top: `27vh`, left: '3vw',transform: `translate3d(0,-100%,0)`, color:'white'}}>
-                    
-                    Boutique
-        </motion.h1>
-        
-        <motion.h1 className="heading"
-                  id="media"
-                   initial={{rotate:-15, y:'-55%', opacity:0}}
-                   whileInView={{rotate: 0 , y: 0, opacity: 1}}
-                   transition={{ease:[0.22, 1, 0.36, 1],duration:3}}
-                   style={{ position: 'absolute', top: `27vh`, left: '28vw',transform: `translate3d(0,-100%,0)`, color:'white'}}>
-                    
-                    with 
-        </motion.h1>
-
-        <motion.h1 className="heading"
-                   initial={{rotate:-15, y:'-55%', opacity:0}}
-                   whileInView={{rotate: 0 , y: 0, opacity: 1}}
-                   transition={{ease:[0.22, 1, 0.36, 1],duration:3}}
-                  style={{ position: 'absolute', top: `37vh`, left: '3vw',transform: `translate3d(0,-100%,0)`, color:'white'}}>
-                    
-                    Focus 
-        </motion.h1> 
-
-        <motion.h1 className="heading"
-                    id="media"
-                   initial={{rotate:-15, y:'-55%', opacity:0}}
-                   whileInView={{rotate: 0 , y: 0, opacity: 1}}
-                   transition={{ease:[0.22, 1, 0.36, 1],duration:3}}
-                   style={{ position: 'absolute', top: `37vh`, left: '21vw',transform: `translate3d(0,-100%,0)`, color:'white'}}>
-                    
-                    on 
-        </motion.h1>  
-        
-        <motion.h1 className="heading"
-                   initial={{rotate:-15, y:'-55%', opacity:0}}
-                   whileInView={{rotate: 0 , y: 0, opacity: 1}}
-                   transition={{ease:[0.22, 1, 0.36, 1],duration:3}}
-                   style={{ position: 'absolute', top: `47vh`, left: '2vw',transform: `translate3d(0,-100%,0)`, color:'white'}}>
-                    
-                    Aesthetics
-        </motion.h1>
-
-        <div style={{ position: 'absolute', top: `8vh`, right: '20vw', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.5em' }}>Portfolio</div>
-        <div style={{ position: 'absolute', top: `8vh`, right: '15vw', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.5em' }}>Agency</div>
-        <div style={{ position: 'absolute', top: `8vh`, right: '10vw', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.5em' }}>Services</div>
-        <div style={{ position: 'absolute', top: `8vh`, right: '5vw', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.5em' }}>Contact</div>
-
-        <div style={{ position: 'absolute', top: `90vh`, left: '30vw', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.5em' }}>
+        <div className="para1" style={{ position: 'absolute', top: `90vh`, left: '11vw', transform: `translate3d(0,-100%,0)`, color:'white',  }}>
         We pride ourselves on our ability to craft digital products that <br />
         not only meet but exceed the expectations of our clients. <br />
         With a wealth of experience and expertise in the field of <br />

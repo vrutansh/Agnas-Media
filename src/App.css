@@ -1,7 +1,9 @@
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
-
+*{
+    font-family: 'HelveticaNeueCyr';
+}
 @keyframes slide{
     from {
         transform: translateX(0);
@@ -23,31 +25,106 @@
 }
 
 .heading{
-    font-size: 6em;
+    font-size: 5em;
 }
 
 @media (min-width: 768px) {
     .heading {
-        /* background-color: rgb(255, 0, 123); */
-        font-size: 6.8vw;
-        margin-left: 5%; 
+
+        font-size: 5vw;
+        margin-left: 1%; 
         margin-top: 2vw;
+        width:64vw;
+        font-weight:400;   
+    }
+    
+    .elem1{
+        font-size:1.2vw;
+        margin-right:11vw;
+
     }
 
-    #media {
-        margin-left: 8%; 
+    .elem2{
+        font-size:1.2vw;
+        margin-right:8vw;
+        
     }
+
+    .elem3{
+        font-size:1.2vw;
+        margin-right:4vw;
+        
+    }
+
+    .elem4{
+        font-size:1.2vw;
+        margin-right:1vw;
+        
+    }
+
+    
+    
+    .para1{
+        padding:1.5vw;
+        font-size:.99vw;
+        line-height:1.3vw;
+        text-align:justify;
+        white-space:nowrap;
+    }
+
+    .menu{
+        display:none;
+    }
+
 }
 
 @media (max-width: 768px) {
     .heading {
-        /* background-color: rgb(255, 0, 123); */
-        font-size: 12vw;
+      
+        font-size: 9vw;
         margin-left: 1%; 
-        margin-top: 0.5vw; /* Adjusted margin-top */
+        margin-top: 20%;
+        font-weight: 500;
+       
     }
 
     #media {
-        margin-left: 23.5%; 
+        margin-left: 9.5%; 
+    }
+    
+
+    .elem1{
+        display:none;
+        
+
+    }
+
+    .elem2{
+        display:none;
+        
+        
+    }
+
+    .elem3{
+        display:none;
+        
+        
+    }
+
+    .elem4{
+        display:none;
+        
+    }
+
+    .menu{
+        justify-content:space-between;
+        display:block
+    }
+
+    .para1{
+        padding:1.5vw;
+        font-size:3.1vw;
+        line-height:6vw;
+        white-space:nowrap;
     }
 }
