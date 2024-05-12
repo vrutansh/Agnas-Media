@@ -44,7 +44,7 @@ export function LandingPageContent() {
           </motion.span>
           <motion.span
             style={{ margin: 0 }}
-            initial={{ opacity: 0, y: '-15px' }}
+            initial={{  opacity: 0, y: '-15px' }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 2 }}
           >
@@ -60,15 +60,13 @@ export function LandingPageContent() {
           </motion.span>
           <motion.span
             style={{ margin: 0 }}
-            initial={{ opacity: 0, y: '-15px' }}
+            initial={{  opacity: 0, y: '-15px' }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 4 }}
           >
             on Aesthetics
           </motion.span>
         </motion.div>
-
-
 
         <div className="elem1" style={{ position: 'absolute', top: `8vh`, right: '20vw', transform: `translate3d(0,-100%,0)`, color:'white', }}>Portfolio</div>
         <div className="elem2" style={{ position: 'absolute', top: `8vh`, right: '15vw', transform: `translate3d(0,-100%,0)`, color:'white', }}>Agency</div>
@@ -162,57 +160,58 @@ export function LandingPageContent() {
             <line x1="0" y1="0" x2="100%" y2="0" stroke="white" strokeWidth="4" />
           </svg>
         </div>
-        <div style={{width: "100%", textAlign:'center',position: 'absolute', top: `1160vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '10.3em' }}>
+
+        <div className="rwork" style={{width: "100%", textAlign:'center',position: 'absolute',  transform: `translate3d(0,-100%,0)`, color:'white',}}>
         Recent Works
         </div>
 
-        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:"35%",bottom:"-30%", overflow:"hidden", top: "1180vh" }}>
+        <div className='work' id="work1" style={{ position:'absolute',  }}>
              <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/project/Alef/alef-preview.jpg" alt="" srcset="" />
 
-              <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
-                  <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
-                  <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
-                   <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
+             <div id="wcontent" style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative",  }}>
+                  <h3 style={{position: "absolute", display:"inline-block"}} >Alef Estate</h3>
+                  <h5 style={{position: "absolute", display:"inline-block",  }}>The site of the day by Awwards3
+                   <span >2021</span></h5>
               </div>
         </div> 
 
-        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:"9%", overflow:"hidden", top: "1280vh" }}>
+        <div className='work' id="work2" style={{ position:'absolute',  }}>
              <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/project/ProtoHomes/protohome-cover-min.jpg" alt="" srcset="" />
 
-              <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
-                  <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
-                  <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
-                   <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
+             <div id="wcontent" style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
+                  <h3 style={{position: "absolute", display:"inline-block"}} >Alef Estate</h3>
+                  <h5 style={{position: "absolute", display:"inline-block",  }}>The site of the day by Awwards3
+                   <span >2021</span></h5>
               </div>
         </div>
 
-        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', right:"11%",top:"1320vh", overflow:"hidden" }}>
+        <div className='work' id="work3" style={{ position:'absolute',  }}>
              <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/portfolio/depositprev-progressive.jpg" alt="" srcset="" />
 
-              <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
-                  <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
-                  <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
-                   <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
+              <div id="wcontent" style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
+                  <h3 style={{position: "absolute", display:"inline-block"}} >Alef Estate</h3>
+                  <h5 style={{position: "absolute", display:"inline-block",  }}>The site of the day by Awwards3
+                   <span >2021</span></h5>
               </div>
         </div>
 
-        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:"9%", top: "1390vh", overflow:"hidden" }}>
-             <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/portfolio/depositprev-progressive.jpg" alt="" srcset="" />
+        <div className='work' id="work4" style={{ position:'absolute', }}>
+             <img style={{objectFit:"cover", backgroundColor:'blue', width:"100%", height:"81%"}} src="https://advanced.team/image/portfolio/depositprev-progressive.jpg" alt="" srcset="" />
 
-              <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
-                  <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
-                  <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
-                   <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
+             <div id="wcontent" style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
+                  <h3 style={{position: "absolute", display:"inline-block"}} >Alef Estate</h3>
+                  <h5 style={{position: "absolute", display:"inline-block",  }}>The site of the day by Awwards3
+                   <span >2021</span></h5>
               </div>
         </div>
 
-        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', right:"11%",top:"1440vh", overflow:"hidden" }}>
+        <div className='work' id="work5" style={{ position:'absolute', }}>
              <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/portfolio/depositprev-progressive.jpg" alt="" srcset="" />
 
-              <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
-                  <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
-                  <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
-                   <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
+             <div id="wcontent" style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
+                  <h3 style={{position: "absolute", display:"inline-block"}} >Alef Estate</h3>
+                  <h5 style={{position: "absolute", display:"inline-block",  }}>The site of the day by Awwards3
+                   <span >2021</span></h5>
               </div>
         </div>
 
@@ -220,8 +219,9 @@ export function LandingPageContent() {
           <Marquee first={"Awards"} second={"Recognition"}/>
         </div>
 
-        <div style={{ position: 'absolute', top: `1610vh`, left: '14vw', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.7em', width:'54vw', lineHeight:'3.7vw'}}>
-        <h1 style={{}}>We are proud to be the 2019 "Studio of the Year" at the CSS Design Awards.Our project was also honored as "E-Commerce of the Year" by the Awwwards in 2022.</h1>
+        <div className="para2" style={{ position: 'absolute', transform: `translate3d(0,-100%,0)`, color:'white', }}>
+        <h1 style={{}}>We are proud to be the 2019<br/> "Studio of the Year" at the CSS Design Awards.
+        Our project was<br/> also honored as "E-Commerce of <br/>the Year" by the Awwwards<br/> in 2022.</h1>
        </div>
 
        <div style={{width:'55vw',position: 'absolute', top: `1650vh`, right: '0', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.5em'}}>
@@ -233,11 +233,11 @@ export function LandingPageContent() {
            <h3 style={{fontSize:'0.8em'}}>Site of the Day <span style={{marginLeft:'27.7vw'}}>09</span></h3>
            <h3 style={{fontSize:'0.8em'}}>Developer Award<span style={{marginLeft:'26.7vw'}}>04</span></h3>
            <h3 style={{fontSize:'0.8em'}}>Honorable Mention <span style={{marginLeft:'25.4vw'}}>11</span></h3>
-           <h3 style={{fontSize:'0.8em'}}>Ecommerce of the year <span style={{marginLeft:'23.4vw'}}>05</span></h3>
+           <h3 style={{fontSize:'0.8em'}}>Ecommerce of the year <span style={{marginLeft:'23.1vw'}}>05</span></h3>
            <h3 style={{fontSize:'0.8em'}}>Mobile of the Week <span style={{marginLeft:'25.6vw'}}>01</span></h3>
        </div>
 
-       <div style={{width:'55vw',position: 'absolute', top: `1685vh`,marginTop:'4.5vh', right: '0', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.5em'}}>
+       <div style={{width:'55vw',position: 'absolute', top: `1689vh`,marginTop:'4.5vh', right: '0', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.5em'}}>
 
             <h1 style={{fontSize:'1.5em'}}>the CSS Design Awards <span style={{marginLeft:'11vw'}}>34</span></h1>
             <svg style={{ width:'80%',}} width="100%" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -246,11 +246,11 @@ export function LandingPageContent() {
            <h3 style={{fontSize:'0.8em'}}>Site of the Day <span style={{marginLeft:'27.7vw'}}>09</span></h3>
            <h3 style={{fontSize:'0.8em'}}>Developer Award<span style={{marginLeft:'26.7vw'}}>04</span></h3>
            <h3 style={{fontSize:'0.8em'}}>Honorable Mention <span style={{marginLeft:'25.4vw'}}>11</span></h3>
-           <h3 style={{fontSize:'0.8em'}}>Ecommerce of the year <span style={{marginLeft:'23.4vw'}}>05</span></h3>
+           <h3 style={{fontSize:'0.8em'}}>Ecommerce of the year <span style={{marginLeft:'23.1vw'}}>05</span></h3>
            <h3 style={{fontSize:'0.8em'}}>Mobile of the Week <span style={{marginLeft:'25.6vw'}}>01</span></h3>
        </div>
 
-       <div style={{width:'55vw',position: 'absolute', top: `1725vh`,marginTop:'4.5vh', right: '0', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.5em'}}>
+       <div style={{width:'55vw',position: 'absolute', top: `1735vh`,marginTop:'4.5vh', right: '0', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.5em',}}>
 
             <h1 style={{fontSize:'1.5em'}}>the FWA <span style={{marginLeft:'25.7vw'}}>34</span></h1>
             <svg style={{ width:'80%',}} width="100%" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -259,44 +259,44 @@ export function LandingPageContent() {
            <h3 style={{fontSize:'0.8em'}}>Site of the Day <span style={{marginLeft:'27.7vw'}}>09</span></h3>
            <h3 style={{fontSize:'0.8em'}}>Developer Award<span style={{marginLeft:'26.7vw'}}>04</span></h3>
            <h3 style={{fontSize:'0.8em'}}>Honorable Mention <span style={{marginLeft:'25.4vw'}}>11</span></h3>
-           <h3 style={{fontSize:'0.8em'}}>Ecommerce of the year <span style={{marginLeft:'23.4vw'}}>05</span></h3>
+           <h3 style={{fontSize:'0.8em'}}>Ecommerce of the year <span style={{marginLeft:'23.1vw'}}>05</span></h3>
            <h3 style={{fontSize:'0.8em'}}>Mobile of the Week <span style={{marginLeft:'25.6vw'}}>01</span></h3>
 
        </div>
 
-       <div className="marquee" style={{ width: "100%", position: 'absolute', top: `1950vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '4em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+       <div className="marquee" id="marq1" style={{ width: "100%", position: 'absolute', transform: `translate3d(0,-100%,0)`, color:'white',  }}>
           <Marquee first={"Contact Us"} second={"Let's Talk"}/>
         </div>
 
-       <div style={{width:'100%',position: 'absolute', padding:'1vw', display:'flex', gap:'2vw', top:'1989vh',transform: `translate3d(0,-100%,0)`, color:'white', fontSize:'0.88vw', lineHeight:'1vw' }}>
-            <div style={{width:'20%', marginLeft:'1.3vw' }}>
+       <div className="footer" style={{position: 'absolute',transform: `translate3d(0,-100%,0)`,color:'white', }}>
+            <div id="foot1"  style={{ }}>
                <h1>Heroes from Ukraine</h1>
                <h1>Main Office</h1>
                <h1>Dnipro, 49000</h1>
-               <h2>hello@agnasmedia.team</h2>
+               <h1>hello@agnasmedia.team</h1>
             </div>
-            <div style={{width:'20%', }}>
+            <div id="foot1"   style={{ }}>
                <h1>Based in USA</h1>
                <h1>Los Angeles, 90210</h1>
                <h1>California</h1>
-               <h2>la@agnasmedia.team</h2>
+               <h1>la@agnasmedia.team</h1>
             </div>
-            <div style={{width:'20%', }}>
+            <div id="foot1"   style={{ }}>
                <h1>Support from Poland </h1>
                <h1>Los Angeles, 90210</h1>
                <h1>California</h1>
-               <h2>la@agnasmedia.team</h2>
+               <h1>la@agnasmedia.team</h1>
             </div>
-            <div style={{width:'20%', paddingLeft:'2.5vw', marginLeft:'2vw' }}>
-              <h1>Facebook</h1>
-              <h1>Instagram</h1>
-              <h1>Dribble</h1>
-              <h1>Behance</h1>
+            <div  id="foot1"  style={{ paddingLeft:'1vw',marginLeft:'1.3vw', }}>
+              <h1 style={{fontWeight:'400'}}>Facebook</h1>
+              <h1 style={{fontWeight:'400'}}>Instagram</h1>
+              <h1 style={{fontWeight:'400'}}>Dribble</h1>
+              <h1 style={{fontWeight:'400'}}>Behance</h1>
             </div>
-            <div style={{width:'20%', marginRight:'2vw' }}>
-              <h2>Business inquiries</h2>
-              <h2>hello@agnasmedia.com</h2>
-              <h2 style={{marginTop:'4vw'}}>Be Advance</h2>
+            <div  id="foot1" style={{ marginRight:'2vw' }}>
+              <h1>Business inquiries</h1>
+              <h1>hello@agnasmedia.com</h1>
+              <h1 style={{marginTop:'7vw'}}>Be Advance</h1>
             </div>
        </div>
         

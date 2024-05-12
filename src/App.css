@@ -28,7 +28,7 @@
     font-size: 5em;
 }
 
-@media (min-width: 768px) {
+@media  (min-width: 768px) {
     .heading {
 
         font-size: 5vw;
@@ -74,10 +74,116 @@
 
     .menu{
         display:none;
+
     }
+
+   .rwork{
+     top: 1167vh;
+     font-size: 10vw;
+   }
+
+   .work{
+    height:99%;
+    width:33vw;
+    overflow:hidden;
+    
+   
+}
+
+#wcontent h3{
+    bottom:30%;
+    font-size: 2.6vw;
+}
+
+#wcontent h5{
+        bottom: 12%;
+        font-size: 1vw;
+    }
+
+#wcontent span{
+        bottom: 12%;
+        font-size: 1vw;
+        margin-left:15vw;
+    }
+
+#work1{
+    left:35%;
+    top:1180vh;
+}
+
+#work2{
+    left:7%;
+    top:1280vh;
+}
+
+#work3{
+    left:57%;
+     top:1320vh;
+}
+
+#work4{
+    
+        left:7%;
+        top:1392vh;
+    
+}
+ 
+#work5{
+    left: 57%;
+    top:1440vh;
+}
+
+.para2{
+    top: 1622vh;
+    left: 15vw; 
+    font-size: 1.4em;
+    width:47vw;
+    line-height:'3.7vw'
+}
+
+.para2 h1{
+    font-weight: 400;
+}
+
+
+#marq1{
+    top: 1940vh; 
+    width: "100%";
+    font-size: '4em';
+    display: 'flex';
+    align-items: 'center';
+    justify-content: 'center';
+    background-color: rgb(42, 165, 116);
 
 }
 
+
+.footer{
+    top:1989vh;
+    font-size:0.8vw;
+    padding:1vw;
+    display:flex;
+    gap:2vw;
+    top:1989vh;
+    width:100%;
+    line-height:1vw;
+}
+
+#foot1{
+    width:20%;
+    margin-left:1.3vw
+}
+
+#foot1 h1, h2{
+    margin-left:1.3vw;
+    font-weight: 400;
+    
+}
+
+}
+
+
+/* for mobile. */
 @media (max-width: 768px) {
     .heading {
       
@@ -91,6 +197,8 @@
     #media {
         margin-left: 9.5%; 
     }
+
+    
     
 
     .elem1{
@@ -127,4 +235,128 @@
         line-height:6vw;
         white-space:nowrap;
     }
+
+    .rwork{
+        font-size: 10.5vw;
+        top: 1172vh;
+    }
+
+    .work{
+        
+        width: 91%;
+        height: 50%;
+        background-color: rgb(147, 118, 118);
+        margin-left: 3.7vw;
+        margin-right: 3vw;
+        margin-bottom:.2vw;
+    }
+
+    #wcontent h3{
+        margin-top: 1%;
+        font-size: 8vw;
+        
+    }
+    
+    #wcontent h5{
+        bottom: 1%;
+        font-size: 3.6vw;
+    }
+
+    #wcontent span{
+        bottom: 1%;
+        font-size: 3vw;
+        margin-left:22vw;
+    }
+    #work1{
+        width: 91%;
+        height: 50%;
+        top: 1178vh;
+        left: 1%;
+        margin-right: 3.6vw;
+        background-color: rgb(227, 155, 31);
+    }
+
+    #work2{
+        width: 91%;
+        height: 50%;
+        top: 1233vh;
+        left: 1%;
+        margin-right: 3.6vw;
+        background-color: rgb(31, 227, 175);
+         
+    }
+
+    #work3{
+        width: 91%;
+        height: 50%;
+        top: 1288vh;
+        left: 1%;
+        margin-right: 3.6vw;
+        background-color: rgb(238, 91, 0);
+         
+    }
+
+    #work4{
+        width: 91%;
+        height: 50%;
+        top: 1343vh;
+        left: 1%;
+        margin-right: 3.6vw;
+        background-color: rgb(19, 159, 59);
+         
+    }
+
+    #work5{
+        width: 91%;
+        height: 50%;
+        top: 1398vh;
+        left: 1%;
+        margin-right: 3.6vw;
+        background-color: rgb(28, 30, 158);
+         
+    }
+
+    .para2{
+        top: 1540vh;
+        width: 86vw;
+        left: 11vw;   
+    }
+    
+    .para2 h1{
+        font-weight: 400;
+        font-size: 9.5vw;
+        line-height: 8.5vw;
+        letter-spacing: 0.3vw;
+        margin-right:5vw ;
+    }
+
+    #marq1{
+        top: 1896vh;
+        width: "100%";
+        background-color: brown;
+
+    }
+
+    .footer{
+        top: 1995vh;
+        left: 5vw;
+        font-size: 2.3vw;
+        gap: 5vw;
+        
+        
+    }
+
+    #foot1{
+        margin-top: 5.5vh;
+    }
+
+    #foot1 h1, h2{
+        margin-left:1.3vw;
+        font-weight: 400;
+        
+    }
+
+    
+
+   
 }

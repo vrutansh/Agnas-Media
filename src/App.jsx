@@ -26,7 +26,7 @@ function App() {
             width: '100%',
             background: '#000000',
           }}>
-              <EffectComposer>
+              {/* <EffectComposer>
                       <Fluid
                           radius={0.5}
                           curl={1.9}
@@ -40,7 +40,7 @@ function App() {
                           rainbow={true}
                           blend={5.0}
                       />
-                  </EffectComposer>
+                  </EffectComposer> */}
             <ScrollControls pages={20}>
               <Scroll html>
                 <LandingPageContent />
