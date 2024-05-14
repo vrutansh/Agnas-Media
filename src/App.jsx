@@ -1,31 +1,30 @@
 import React from 'react'
 import { Canvas, useThree } from '@react-three/fiber'
-import { Html, Preload, Scroll, ScrollControls, Text } from '@react-three/drei'
+import { Html, OrbitControls, Preload, Scroll, ScrollControls, Text } from '@react-three/drei'
 import { EffectComposer } from '@react-three/postprocessing'
 import { Fluid } from '@whatisjery/react-fluid-distortion'
 
 import LandingPage from './components/LandingPage'
 import { LandingPageContent } from './components/Content'
 
-import * as THREE from 'three'
-import { useRef, useState } from 'react'
-import { useFrame } from '@react-three/fiber'
-import { Image, Environment, useScroll, useTexture } from '@react-three/drei'
-import { easing } from 'maath'
-import './components/utils'
+import "./App.css"
 
 
 function App() {
   return (
     <>
-          <Canvas style={{
+          <Canvas 
+          className='canvas'
+          style={{
             position: 'fixed',
             top: 0,
             left: 0,
             height: '100%',
             width: '100%',
             background: '#000000',
+            touchAction: 'auto !important'
           }}>
+            {/* <OrbitControls enableZoom={false} enableDamping={false} enablePan={false} minPolarAngle={Math.PI/2 - 0.2} maxPolarAngle={Math.PI/2 - 0.2} minAzimuthAngle={Math.PI/6 -1} maxAzimuthAngle={Math.PI/6} /> */}
               <EffectComposer>
                       <Fluid
                           radius={0.5}
@@ -42,6 +41,7 @@ function App() {
                       />
                   </EffectComposer>
             <ScrollControls pages={20}>
+              <OrbitControls enableZoom={false} enableDamping={false} enablePan={false} enableRotate={false} />
               <Scroll html>
                 <LandingPageContent />
               </Scroll>

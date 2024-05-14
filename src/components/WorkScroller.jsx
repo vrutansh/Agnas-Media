@@ -24,7 +24,7 @@ function Rig(props) {
   useFrame((state, delta) => {
     ref.current.rotation.y = -scroll.offset * (Math.PI * 2) // Rotate contents
     state.events.update() // Raycasts every frame rather than on pointer-move
-    easing.damp3(state.camera.position, [-state.pointer.x * 2, state.pointer.y + 1.5, 10], 0.3, delta) // Move camera
+    // easing.damp3(state.camera.position, [-state.pointer.x * 2, state.pointer.y + 1.5, 10], 0.3, delta) // Move camera
     state.camera.lookAt(0, 0, 0) // Look at center
     tl.current.seek(scroll.offset * tl.current.duration());
   })
@@ -81,44 +81,44 @@ function Card({ url, ...props }) {
   )
 }
 
-function Banner(props) {
-  const ref = useRef()
-  const texture = useTexture('/agnas-logo.png')
-  texture.wrapS = texture.wrapT = THREE.RepeatWrapping
-  const scroll = useScroll()
-  const tl = useRef();
-  useFrame((state, delta) => {
-    ref.current.material.time.value += Math.abs(scroll.delta) * 4
-    ref.current.material.map.offset.x += delta / 2
-    tl.current.seek(scroll.offset * tl.current.duration());
-  })
+// function Banner(props) {
+//   const ref = useRef()
+//   const texture = useTexture('/agnas-logo.png')
+//   texture.wrapS = texture.wrapT = THREE.RepeatWrapping
+//   const scroll = useScroll()
+//   const tl = useRef();
+//   useFrame((state, delta) => {
+//     ref.current.material.time.value += Math.abs(scroll.delta) * 4
+//     ref.current.material.map.offset.x += delta / 2
+//     tl.current.seek(scroll.offset * tl.current.duration());
+//   })
 
-  useLayoutEffect(() => {
-    tl.current = gsap.timeline();
+//   useLayoutEffect(() => {
+//     tl.current = gsap.timeline();
 
-    // LOGO ANIMATION
-    tl.current.to(
-      ref.current.position,
-      {
-        duration: 100,
-        y: 0,
-      },
-      0
-    );
-    tl.current.to(
-      ref.current.position,
-      {
-        duration: 100,
-        z: -5,
-      },
-      0
-    );
-  }, []);
+//     // LOGO ANIMATION
+//     tl.current.to(
+//       ref.current.position,
+//       {
+//         duration: 100,
+//         y: 0,
+//       },
+//       0
+//     );
+//     tl.current.to(
+//       ref.current.position,
+//       {
+//         duration: 100,
+//         z: -5,
+//       },
+//       0
+//     );
+//   }, []);
 
-  return (
-    <mesh ref={ref} {...props}>
-      <cylinderGeometry args={[10.6, 10.6, 1, 128, 16, true]} />
-      <meshSineMaterial map={texture} map-anisotropy={16} map-repeat={[30, 1]} side={THREE.DoubleSide} toneMapped={false} />
-    </mesh>
-  )
-}
+//   return (
+//     <mesh ref={ref} {...props}>
+//       <cylinderGeometry args={[10.6, 10.6, 1, 128, 16, true]} />
+//       <meshSineMaterial map={texture} map-anisotropy={16} map-repeat={[30, 1]} side={THREE.DoubleSide} toneMapped={false} />
+//     </mesh>
+//   )
+// }

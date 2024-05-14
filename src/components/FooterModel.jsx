@@ -2,13 +2,11 @@ import { useScroll } from "@react-three/drei";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { useEffect, useLayoutEffect, useRef } from "react";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { easing } from 'maath'
 import gsap from "gsap";
 
 export function FooterModel(props) {
-    const ref = useRef()
-    const scroll = useScroll()
-  const scrollref = useRef();
+  const ref = useRef()
+  const scroll = useScroll()
   const tl = useRef();
 
   const gltf = useLoader(GLTFLoader, './models/gargoyle.glb');
