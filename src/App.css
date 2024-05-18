@@ -1,9 +1,31 @@
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
-*{
-    font-family: 'HelveticaNeueCyr';
+
+@font-face {
+    font-family: HelveticaNeueCyrMedium;
+    src: url('./assets/fonts/HelveticaNeueCyr/HelveticaNeueCyrMedium/HelveticaNeueCyrMedium.ttf')  format('truetype');
 }
+
+@font-face {
+    font-family: HelveticaNeueCyrLight;
+    src: url('./assets/fonts/HelveticaNeueCyr/HelveticaNeueCyrLight/HelveticaNeueCyrLight.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: HelveticaNeueCyrBold;
+    src: url('./assets/fonts/HelveticaNeueCyr/HelveticaNeueCyrBold/HelveticaNeueCyrBold.ttf')  format('truetype');
+}
+
+*{
+    font-family: 'HelveticaNeueCyrLight';
+}
+
+canvas {
+    /* overflow: scroll; */
+    pointer-events: none;
+}
+
 @keyframes slide{
     from {
         transform: translateX(0);

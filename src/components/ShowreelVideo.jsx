@@ -45,7 +45,7 @@ export const ShowreelVideo = forwardRef((props, forwardRef) => {
             y: 35, 
             duration: 0.5,
           }, 
-          ">0.07"
+          ">0.06"
         );
 
       }, [])
