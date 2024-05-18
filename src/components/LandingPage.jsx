@@ -50,7 +50,7 @@ function LandingPage() {
   return (
     <>
       <PerspectiveCamera makeDefault fov={100} position={[0, 0, 11]} />
-      <OrbitControls enableZoom={false} enableDamping={false} enablePan={false} enableRotate={false} />
+      {/* <OrbitControls enableZoom={false} enableDamping={false} enablePan={false} enableRotate={false} /> */}
   
       <spotLight
         intensity={80}

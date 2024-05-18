@@ -20,9 +20,10 @@
 *{
     font-family: 'HelveticaNeueCyrLight';
 }
-  
+
 canvas {
-    touch-action: auto!important;
+    /* overflow: scroll; */
+    pointer-events: none;
 }
 
 @keyframes slide{

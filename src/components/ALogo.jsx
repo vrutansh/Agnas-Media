@@ -10,34 +10,8 @@ import gsap from "gsap";
 export function ALogo(props) {
   const ref = useRef()
   const scroll = useScroll()
-  const scrollref = useRef();
+  // const scrollref = useRef();
   const tl = useRef();
-
-  // function getWindowDimensions() {
-  //   const { innerWidth: width, innerHeight: height } = window;
-  //   return {
-  //     width,
-  //     height
-  //   };
-  // }
-  
-  // function useWindowDimensions() {
-  //   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-  
-  //   useEffect(() => {
-  //     function handleResize() {
-  //       setWindowDimensions(getWindowDimensions());
-  //     }
-  
-  //     window.addEventListener('resize', handleResize);
-  //     return () => window.removeEventListener('resize', handleResize);
-  //   }, []);
-  
-  //   return windowDimensions;
-  // }
-  
-  // const { height, width } = useWindowDimensions();
-  // console.log(height, width)
   const gltf = useLoader(GLTFLoader, './models/agnas1.glb');
 
   // if (width>500){
@@ -49,8 +23,10 @@ export function ALogo(props) {
   //     console.log("Working")
   //   })
   // }
-  useFrame(() => {
+  useFrame((state, delta) => {
     tl.current.seek(scroll.offset * tl.current.duration());
+    // ref.current.position.z = scroll.offset * 200
+    // state.events.update()
   });
 
   useLayoutEffect(() => {

@@ -41,7 +41,7 @@ function App() {
                       />
                   </EffectComposer>
             <ScrollControls pages={20}>
-              <OrbitControls enableZoom={false} enableDamping={false} enablePan={false} enableRotate={false} />
+              {/* <OrbitControls enableZoom={false} enableDamping={false} enablePan={false} enableRotate={false} /> */}
               <Scroll html>
                 <LandingPageContent />
               </Scroll>
