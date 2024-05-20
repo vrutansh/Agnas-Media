@@ -23,7 +23,7 @@ export const ShowreelVideo = forwardRef((props, forwardRef) => {
         tl.current.to(
           ref.current.rotation,
           {
-            duration: 0.18,
+            duration: 0.13,
             y: 0,
           },
           0
@@ -32,7 +32,7 @@ export const ShowreelVideo = forwardRef((props, forwardRef) => {
         tl.current.to(
           ref.current.position,
           {
-            duration: 0.2,
+            duration: 0.17,
             z: 5,
           },
           0

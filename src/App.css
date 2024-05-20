@@ -21,10 +21,10 @@
     font-family: 'HelveticaNeueCyrLight';
 }
 
-canvas {
-    /* overflow: scroll; */
+/* canvas {
+    overflow: scroll;
     pointer-events: none;
-}
+} */
 
 @keyframes slide{
     from {
@@ -44,4 +44,8 @@ canvas {
 .marquee-slide{
     display: inline-block;
     animation: 5s slide infinite linear;
+}
+
+.text-content{
+    position: inherit;
 }
