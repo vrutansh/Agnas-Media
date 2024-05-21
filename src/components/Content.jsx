@@ -48,14 +48,12 @@ export function LandingPageContent() {
         </motion.div>
 
 
-
-        <div className="elem1" style={{ position: 'absolute', top: `8vh`, right: '20vw', transform: `translate3d(0,-100%,0)`, color:'white' }}>Portfolio</div>
-        <div className="elem2" style={{ position: 'absolute', top: `8vh`, right: '15vw', transform: `translate3d(0,-100%,0)`, color:'white', }}>Agency</div>
-        <div className="elem3" style={{ position: 'absolute', top: `8vh`, right: '10vw', transform: `translate3d(0,-100%,0)`, color:'white', }}>Services</div>
-        <div className="elem4" style={{ position: 'absolute', top: `8vh`, right: '5vw', transform: `translate3d(0,-100%,0)`, color:'white', }}>Contact</div> 
-        <div className="menu" style={{ position: 'absolute', top: `8vh`, right: '5vw', transform: `translate3d(0,-100%,0)`, color:'white',  }}>
-
-          {/* <h3>Menu</h3> */}
+        <div id="menu-bar" style={{top:'8vh', position: 'absolute', display: 'flex', color: 'white', right: '4em', width: '20vw', justifyContent: 'space-between'}}>
+          <p>Portfolio</p>
+          <p>Agency</p>
+          <p>Services</p>
+          <p>Contact</p> 
+          <p></p>
         </div>
 
         <div className="para1" style={{ position: 'absolute', top: `90vh`, left: '11vw', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.1em', lineHeight: '1.8em', fontWeight: '300'  }}>
@@ -65,32 +63,33 @@ export function LandingPageContent() {
         digital product development, we understand how to design <br />
         user-friendly interfaces that captivate and engage audiences.
         </div>
+
         <div className="marquee" style={{ width: "100%", position: 'absolute', top: `550vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '4em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <Marquee first={"Showreel"} second={"Showreel"}/>
         </div>
-        <div style={{ width: "100%", position: 'absolute', top: `880vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '4em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <div style={{width:'60%' , textAlign:'start'}}>
+
+        <div className="para2" style={{top:'880vh'}}>
+          <p>
             Every project made by advanced 
             team is created at the intersection
             between design and technology,
             making the future — today
-          </div>
+          </p>
         </div>
-        <div style={{ display: 'flex', alignItems:'center',flexDirection:'column',width: '50%', position: 'absolute', top: `910vh`, right: '0', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.3em' }}>
-        <div style={{width:'80%' ,textAlign:'start'}}>
-        With over 200 projects completed, our team has gained a comprehensive understanding
-        of user behavior patterns. This knowledge allows us to provide our clients with efficient
-        and effective solutions to their digital challenges. By leveraging our experience, we are
-        able to achieve maximum efficiency in solving client problems and delivering successful
-        outcomes.
+
+        <div className="para3" style={{ top: '910vh' }}>
+          <p>
+            With over 200 projects completed, our team has gained a comprehensive understanding
+            of user behavior patterns. This knowledge allows us to provide our clients with efficient
+            and effective solutions to their digital challenges. By leveraging our experience, we are
+            able to achieve maximum efficiency in solving client problems and delivering successful
+            outcomes.
+          </p>
         </div>
-        <svg style={{ width:'80%',marginTop:'2em'}} width="100%" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <line x1="0" y1="0" x2="100%" y2="0" stroke="white" strokeWidth="4" />
-        </svg>
-        </div>
+
         <div style={{ width:'100%', display: 'flex' ,position: 'absolute', top: `1020vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.2em', alignItems: 'center', justifyContent: 'center'}}>
           <div style={{width: '60%'}}>
-            <p >Our Services:</p>
+            <p >Our services:</p>
             <div style={{fontSize: '7em' }}>
             UX Strategy<br />
             UI Design <br />
@@ -101,26 +100,19 @@ export function LandingPageContent() {
             </div>
           </div>
         </div>
-        <div style={{ width: "100%", position: 'absolute', top: `1080vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '4em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <div style={{width:'60%' , textAlign:'start'}}>
+        
+        <div className="para2" style={{top: `1080vh` }}>
+          <p>
             We believe that the power of design,
             creativity, and emotion helps large and
             middle businesses to involve people in their
             products and services, multiplying their
             consumer characteristics
-          </div>
+          </p>
         </div>
-        <div style={{ width: "100%", position: 'absolute', top: `1080vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '4em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <div style={{width:'60%' , textAlign:'start'}}>
-            We believe that the power of design,
-            creativity, and emotion helps large and
-            middle businesses to involve people in their
-            products and services, multiplying their
-            consumer characteristics
-          </div>
-        </div>
-        <div style={{ display: 'flex', alignItems:'center',flexDirection:'column',width: '50%', position: 'absolute', top: `1120vh`, right: '0', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.3em' }} >
-          <div style={{width:'80%' ,textAlign:'start'}}>
+        
+        <div className="para3" style={{ top: `1120vh` }} >
+          <p>
             We keep looking towards the future, at the same time recognizing 
             that behavior change takes place only with a clear awareness of the
             current state. Before we get down to the design, our team conducts
@@ -129,11 +121,9 @@ export function LandingPageContent() {
             you stay unique today and will be of current interest no matter what
             awaits you in the future.
             outcomes.
-          </div>
-          <svg style={{ width:'80%',marginTop:'2em'}} width="100%" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="0" y1="0" x2="100%" y2="0" stroke="white" strokeWidth="4" />
-          </svg>
+          </p>
         </div>
+
         <div style={{width: "100%", textAlign:'center',position: 'absolute', top: `1160vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '10.3em' }}>
         Recent Works
         </div>

@@ -54,6 +54,48 @@
     font-weight: 100;
 }
 
+#menu-bar{
+    top: 8vh;
+    position: absolute; 
+    display: flex; 
+    color: white;
+    right: 4em; 
+    width: 20vw; 
+    justify-content: space-between;
+}
+
+.para2{
+    width: 50%; 
+    position: absolute; 
+    transform: translate3d(0,-100%,0); 
+    color: white; 
+    font-size: 4em; 
+    left: 3em;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.para3{
+    display: flex; 
+    align-items: center; 
+    position: absolute; 
+    right: 3em; 
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+    line-height: 1.6em;
+    border-bottom: solid 2px white;
+    padding-bottom: 50px;
+    transform: translate3d(0,-100%,0); 
+    color: white; 
+}
+
+.para3 p{
+    text-align: start;
+    font-size: 1.3em;
+}
+
 .marquee{
     overflow: hidden;
     white-space: nowrap;
