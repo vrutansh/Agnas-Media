@@ -12,24 +12,17 @@ export function LandingPageContent() {
           initial={{ rotate: -15, y: '-55%', opacity: 0 }}
           whileInView={{ rotate: 0, y: 0, opacity: 1 }}
           transition={{ ease: [0.22, 1, 0.36, 1], duration: 2, delay: 0 }}
-          style={{
-            position: 'absolute',
-            top: '4vh',
-            left: '3vw',
-            transform: `translate3d(0,-100%,0)`,
-            color: 'white'
-          }}
         >
           <motion.span
-            style={{ margin: 0, fontSize: '6em', fontWeight: '600' }}
+          className="heading-text"
             initial={{ opacity: 0, y: '-15px' }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2, delay: 0.2 }}
           >
-            Agnas Media® <br />
+            Agnas Media <span id="registered">®</span>  <br />
           </motion.span>
           <motion.span
-            style={{ margin: 0, fontSize: '6em', fontWeight: '600' }}
+            className="heading-text"
             initial={{ opacity: 0, y: '-15px' }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2, delay: 0.4 }}
@@ -37,7 +30,7 @@ export function LandingPageContent() {
             Digital Design <br />
           </motion.span>
           <motion.span
-            style={{ margin: 0, fontSize: '6em', fontWeight: '600' }}
+            className="heading-text"
             initial={{ opacity: 0, y: '-15px' }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2, delay: 0.6 }}
@@ -45,7 +38,7 @@ export function LandingPageContent() {
             Boutique with Focus <br />
           </motion.span>
           <motion.span
-            style={{ margin: 0, fontSize: '6em', fontWeight: '600' }}
+            className="heading-text"
             initial={{ opacity: 0, y: '-15px' }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2, delay: 0.8 }}

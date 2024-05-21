@@ -21,10 +21,9 @@ function App() {
             left: 0,
             height: '100%',
             width: '100%',
-            background: '#000000',
-            touchAction: 'auto !important'
+            background: 'black',
+            // touchAction: 'auto !important'
           }}>
-            {/* <OrbitControls enableZoom={false} enableDamping={false} enablePan={false} minPolarAngle={Math.PI/2 - 0.2} maxPolarAngle={Math.PI/2 - 0.2} minAzimuthAngle={Math.PI/6 -1} maxAzimuthAngle={Math.PI/6} /> */}
               <EffectComposer>
                       <Fluid
                           radius={0.5}
@@ -38,6 +37,8 @@ function App() {
                           intensity={2}
                           rainbow={true}
                           blend={5.0}
+                          showBackground={true}
+                          backgroundColor='#000000'
                       />
                   </EffectComposer>
             <ScrollControls pages={20}>

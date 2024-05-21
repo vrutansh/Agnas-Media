@@ -35,6 +35,25 @@
     }
 }
 
+.heading{
+    position: absolute;
+    top: 4vh;
+    left: 3vw;
+    transform: translate3d(0,-100%,0);
+    color: white;
+}
+
+.heading-text{
+    margin: 0;
+    font-size: 6em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+#registered{
+    font-weight: 100;
+}
+
 .marquee{
     overflow: hidden;
     white-space: nowrap;
