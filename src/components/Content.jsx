@@ -2,6 +2,8 @@ import { Scroll } from "@react-three/drei"
 import "../App.css"
 import Marquee from "./Marquee"
 import { motion } from "framer-motion"
+import MagneticButton from "./MagneticButton"
+
 export function LandingPageContent() {
   return (
     <>
@@ -77,14 +79,27 @@ export function LandingPageContent() {
           </p>
         </div>
 
-        <div className="para3" style={{ top: '910vh' }}>
-          <p>
-            With over 200 projects completed, our team has gained a comprehensive understanding
-            of user behavior patterns. This knowledge allows us to provide our clients with efficient
-            and effective solutions to their digital challenges. By leveraging our experience, we are
-            able to achieve maximum efficiency in solving client problems and delivering successful
-            outcomes.
-          </p>
+        <div style={{width: '100%', position: 'absolute', top: '887vh', display: 'flex', justifyContent: 'space-around', alignItems: 'center'}}>
+        
+          <MagneticButton>
+          <div class="my-button">
+              <div style={{textAlign: 'center', transform: 'rotate(45deg)'}}>
+                <svg width="30" height="40" viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path className="button-arrow" d="M15 40C15 40 15 18.9683 15 -9.53674e-07M15 -9.53674e-07C15 13.7026 1 16.2319 1 16.2319M15 -9.53674e-07C15 13.7026 29 16.2319 29 16.2319" stroke="white" stroke-width="2"></path>
+                </svg>
+              </div>
+            </div>
+          </MagneticButton>
+
+          <div className="para3">
+            <p>
+              With over 200 projects completed, our team has gained a comprehensive understanding
+              of user behavior patterns. This knowledge allows us to provide our clients with efficient
+              and effective solutions to their digital challenges. By leveraging our experience, we are
+              able to achieve maximum efficiency in solving client problems and delivering successful
+              outcomes.
+            </p>
+          </div>
         </div>
 
         <div style={{ width:'100%', display: 'flex' ,position: 'absolute', top: `1020vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.2em', alignItems: 'center', justifyContent: 'center'}}>
@@ -111,8 +126,20 @@ export function LandingPageContent() {
           </p>
         </div>
         
-        <div className="para3" style={{ top: `1120vh` }} >
-          <p>
+        <div style={{width: '100%', position: 'absolute', top: '1090vh', display: 'flex', justifyContent: 'space-around', alignItems: 'center'}}>
+        
+          <MagneticButton>
+            <div class="my-button">
+              <div style={{textAlign: 'center', transform: 'rotate(45deg)'}}>
+                <svg width="30" height="40" viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path className="button-arrow" d="M15 40C15 40 15 18.9683 15 -9.53674e-07M15 -9.53674e-07C15 13.7026 1 16.2319 1 16.2319M15 -9.53674e-07C15 13.7026 29 16.2319 29 16.2319" stroke="white" stroke-width="2"></path>
+                </svg>
+              </div>
+            </div>
+          </MagneticButton>
+
+          <div className="para3">
+            <p>
             We keep looking towards the future, at the same time recognizing 
             that behavior change takes place only with a clear awareness of the
             current state. Before we get down to the design, our team conducts
@@ -121,7 +148,8 @@ export function LandingPageContent() {
             you stay unique today and will be of current interest no matter what
             awaits you in the future.
             outcomes.
-          </p>
+            </p>
+          </div>
         </div>
 
         <div style={{width: "100%", textAlign:'center',position: 'absolute', top: `1160vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '10.3em' }}>
