@@ -10,7 +10,5 @@ import { LandingPageContent } from './components/Content.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
-    {/* <LandingPageContent /> */}
-    {/* <Content /> */}
   </React.StrictMode>,
 )

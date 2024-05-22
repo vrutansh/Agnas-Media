@@ -21,10 +21,10 @@
     font-family: 'HelveticaNeueCyrLight';
 }
 
-canvas {
-    /* overflow: scroll; */
+/* canvas {
+    overflow: scroll;
     pointer-events: none;
-}
+} */
 
 @keyframes slide{
     from {
@@ -33,6 +33,67 @@ canvas {
     to{
         transform: translateX(-50%);
     }
+}
+
+.heading{
+    position: absolute;
+    top: 4vh;
+    left: 3vw;
+    transform: translate3d(0,-100%,0);
+    color: white;
+}
+
+.heading-text{
+    margin: 0;
+    font-size: 6em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+#registered{
+    font-weight: 100;
+}
+
+#menu-bar{
+    top: 8vh;
+    position: absolute; 
+    display: flex; 
+    color: white;
+    right: 4em; 
+    width: 20vw; 
+    justify-content: space-between;
+}
+
+.para2{
+    width: 50%; 
+    position: absolute; 
+    transform: translate3d(0,-100%,0); 
+    color: white; 
+    font-size: 4em; 
+    left: 3em;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.para3{
+    display: flex; 
+    align-items: center; 
+    position: absolute; 
+    right: 3em; 
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+    line-height: 1.6em;
+    border-bottom: solid 2px white;
+    padding-bottom: 50px;
+    transform: translate3d(0,-100%,0); 
+    color: white; 
+}
+
+.para3 p{
+    text-align: start;
+    font-size: 1.3em;
 }
 
 .marquee{
@@ -46,475 +107,6 @@ canvas {
     animation: 5s slide infinite linear;
 }
 
-.heading{
-    font-size: 5em;
-}
-
-@media  (min-width: 768px) {
-    .heading {
-
-        font-size: 5vw;
-        margin-left: 1%; 
-        margin-top: 2vw;
-        width:64vw;
-        font-weight:400;   
-    }
-    
-    .elem1{
-        font-size:1.2vw;
-        margin-right:11vw;
-
-    }
-
-    .elem2{
-        font-size:1.2vw;
-        margin-right:8vw;
-        
-    }
-
-    .elem3{
-        font-size:1.2vw;
-        margin-right:4vw;
-        
-    }
-
-    .elem4{
-        font-size:1.2vw;
-        margin-right:1vw;
-        
-    }
-
-    
-    
-    .para1{
-        padding:1.5vw;
-        font-size:.99vw;
-        line-height:1.3vw;
-        text-align:justify;
-        white-space:nowrap;
-    }
-
-    .menu{
-        display:none;
-
-    }
-
-   .rwork{
-     top: 1167vh;
-     font-size: 10vw;
-   }
-
-   .work{
-    height:99%;
-    width:33vw;
-    overflow:hidden;
-    
-   
-}
-
-#wcontent h3{
-    bottom:30%;
-    font-size: 2.6vw;
-}
-
-#wcontent h5{
-        bottom: 12%;
-        font-size: 1vw;
-    }
-
-#wcontent span{
-        bottom: 12%;
-        font-size: 1vw;
-        margin-left:15vw;
-    }
-
-#work1{
-    left:35%;
-    top:1180vh;
-}
-
-#work2{
-    left:7%;
-    top:1280vh;
-}
-
-#work3{
-    left:57%;
-     top:1320vh;
-}
-
-#work4{
-    
-        left:7%;
-        top:1392vh;
-    
-}
- 
-#work5{
-    left: 57%;
-    top:1440vh;
-}
-
-.para2{
-    top: 1622vh;
-    left: 15vw; 
-    font-size: 1.4em;
-    width:47vw;
-    line-height:'3.7vw'
-}
-
-.para2 h1{
-    font-weight: 400;
-}
-
-
-#marq1{
-    top: 1940vh; 
-    font-size: 10vh;
-    width: "100%";
-    font-size: '4em';
-    display: 'flex';
-    align-items: 'center';
-    justify-content: 'center';
-   
-
-}
-
-.awwards{
-    
-    top: 1700vh;
-    right: 0;
-    margin-right:6vw;
-    width:35vw;
-}
-
-.awwards h1 span{
-    margin-left: 25vw;
-}
-
-.awwards h1{
-    font-size:1.5vw;
-    font-weight:550;
-
-}
-
-#Css{
-
-    top: 1751vh;
-    right: 0;
-    margin-right:6vw;
-    width:35vw;
-}
-
-#Css h1 span{
-    margin-left: 16vw;
-}
-
-#Css h1{
-    font-size:1.5vw;
-    font-weight:550;
-
-}
-
-#Fwa{
-    top: 1801vh;
-    right: 0;
-    margin-right:6vw;
-    width:35vw;
-}
- 
-#Fwa h1 span{
-    margin-left:26.5vw;
-}
-
-#Fwa h1{
-    font-size:1.5vw;
-    font-weight:550;
-
-}
-
-.contentaward{
-    width:98%;
-    font-size:1.2vw;
-    line-height:0.5vw;
-    margin-bottom: 15vw;
-}
-
-.contentaward h3{
-    font-weight: 400;
-}
-
-.footer{
-    top:1989vh;
-    font-size:0.8vw;
-    padding:1vw;
-    display:flex;
-    gap:2vw;
-    top:1989vh;
-    width:100%;
-    line-height:1vw;
-}
-
-#foot1{
-    width:20%;
-    margin-left:1.3vw
-}
-
-#foot1 h1, h2{
-    margin-left:1.3vw;
-    font-weight: 400;
-    
-}
-
-}
-
-
-/* for mobile. */
-@media screen and (max-width: 767px) {
-    .heading {
-      
-        font-size: 9vw;
-        margin-left: 1%; 
-        margin-top: 20%;
-        font-weight: 500;
-       
-    }
-
-    #media {
-        margin-left: 9.5%; 
-    }
-
-    
-    
-
-    .elem1{
-        display:none;
-        
-
-    }
-
-    .elem2{
-        display:none;
-        
-        
-    }
-
-    .elem3{
-        display:none;
-        
-        
-    }
-
-    .elem4{
-        display:none;
-        
-    }
-
-    .menu{
-        justify-content:space-between;
-        display:block
-    }
-
-    .para1{
-        padding:1.5vw;
-        font-size:3.1vw;
-        line-height:6vw;
-        white-space:nowrap;
-    }
-
-    .rwork{
-        font-size: 10.5vw;
-        top: 1172vh;
-    }
-
-    .work{
-        
-        width: 91%;
-        height: 50%;
-        background-color: rgb(147, 118, 118);
-        margin-left: 3.7vw;
-        margin-right: 3vw;
-        margin-bottom:.2vw;
-    }
-
-    #wcontent h3{
-        margin-top: 1vh;
-        margin-top: 2vw;
-        font-size: 8vw;
-        
-    }
-    
-    #wcontent h5{
-        bottom: 1vh;
-        margin-top: 2vw;
-        font-size: 3.6vw;
-    }
-
-    #wcontent span{
-        bottom: 1vh;
-        margin-top: 2vw;
-        font-size: 3vw;
-        margin-left:22vw;
-    }
-    #work1{
-        width: 91%;
-        height: 50%;
-        top: 1178vh;
-        left: 1%;
-        margin-right: 3.6vw;
-        background-color: rgb(227, 155, 31);
-    }
-
-    #work2{
-        width: 91%;
-        height: 50%;
-        top: 1233vh;
-        left: 1%;
-        margin-right: 3.6vw;
-        background-color: rgb(31, 227, 175);
-         
-    }
-
-    #work3{
-        width: 91%;
-        height: 50%;
-        top: 1288vh;
-        left: 1%;
-        margin-right: 3.6vw;
-        background-color: rgb(238, 91, 0);
-         
-    }
-
-    #work4{
-        width: 91%;
-        height: 50%;
-        top: 1343vh;
-        left: 1%;
-        margin-right: 3.6vw;
-        background-color: rgb(19, 159, 59);
-         
-    }
-
-    #work5{
-        width: 91%;
-        height: 45%;
-        top: 1398vh;
-        left: 1%;
-        margin-right: 3.6vw;
-        background-color: rgb(28, 30, 158);
-         
-    }
-
-    .para2{
-        top: 1540vh;
-        width: 86vw;
-        left: 11vw;   
-    }
-    
-    .para2 h1{
-        font-weight: 400;
-        font-size: 9.5vw;
-        line-height: 8.5vw;
-        letter-spacing: 0.3vw;
-        margin-right:5vw ;
-    }
-
-    #marq1{
-        top: 1896vh;
-        font-size: 8vw;
-        width: "100%";
-
-    }
-
-    .awwards{
-        top: 1700vh;
-        left: 7%;
-        margin-right:6vw;
-        width:85vw; 
-    }
-
-    .awwards h1 span{
-        margin-left: 55vw;
-    }
-
-    .awwards h1{
-        font-size:4.5vw;
-        font-weight:550;
-    }
-
-    
-    #Css{
-        top: 1745vh;
-        left: 7%;
-        margin-right:6vw;
-        width:85vw;
-          
-    }
-
-    #Css h1 span{
-        margin-left: 28vw;
-    }
-
-    #Css h1{
-        font-size:4.5vw;
-        font-weight:550;
-    
-    }
-    
-    #Fwa{
-        top: 1790vh;
-        left:7%;
-        margin-right:6vw;
-        width:85vw;
-    }
-
-    #Fwa h1 span{
-        margin-left: 57.7vw;
-
-    }
-
-    #Fwa h1{
-        width: 96%;
-        margin-top: 3vw;
-        font-size:4.5vw;
-        font-weight:550;
-    
-    }
-    
-    .contentaward{
-        background-color: rgb(60, 49, 22);
-        width:100%;
-        height: 100%;
-        line-height:0.3vw;
-        margin-bottom: 5vw;
-    }
-    
-    .contentaward h3{
-        font-weight: 400;
-    }
-    
-
-
-    .footer{
-        top: 1995vh;
-        left: 5vw;
-        font-size: 2.3vw;
-        gap: 5vw;
-        
-        
-    }
-
-    #foot1{
-        margin-top: 5.5vh;
-    }
-
-    #foot1 h1, h2{
-        margin-left:1.3vw;
-        font-weight: 400;
-        
-    }
-
-    
-
-   
+.text-content{
+    position: inherit;
 }
