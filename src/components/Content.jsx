@@ -210,9 +210,9 @@ export function LandingPageContent() {
         Recent Works
         </div>
         <div className='work' ref={el => workRefs.current.push(el)} style={{height:"90vh", width:"33vw", position:'absolute', left:"35%",bottom:"-30%", overflow:"hidden", top: "1180vh" }}>
-            <div className='cursor' >
+            <button className='cursor' >
                <i class="ri-arrow-right-up-line"></i>
-            </div>
+            </button>
              <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/project/Alef/alef-preview.jpg" alt="" srcset="" />
               <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
                   <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
@@ -221,9 +221,9 @@ export function LandingPageContent() {
               </div>
         </div> 
         <div className='work'  ref={el => workRefs.current.push(el)} style={{height:"90vh", width:"33vw", position:'absolute', left:"9%", overflow:"hidden", top: "1280vh" }}>
-        <div className='cursor' >
+        <button className='cursor' >
                <i class="ri-arrow-right-up-line"></i>
-            </div>
+            </button>
              <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/project/ProtoHomes/protohome-cover-min.jpg" alt="" srcset="" />
               <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
                   <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
@@ -232,9 +232,9 @@ export function LandingPageContent() {
               </div>
         </div>
         <div className='work'  ref={el => workRefs.current.push(el)} style={{height:"90vh", width:"33vw", position:'absolute', right:"11%",top:"1320vh", overflow:"hidden" }}>
-        <div className='cursor' >
+        <button className='cursor' >
                <i class="ri-arrow-right-up-line"></i>
-            </div>
+            </button>
              <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/portfolio/depositprev-progressive.jpg" alt="" srcset="" />
               <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
                   <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
@@ -243,9 +243,9 @@ export function LandingPageContent() {
               </div>
         </div>
         <div className='work'  ref={el => workRefs.current.push(el)} style={{height:"90vh", width:"33vw", position:'absolute', left:"9%", top: "1390vh", overflow:"hidden" }}>
-        <div className='cursor' >
+        <button className='cursor' >
                <i class="ri-arrow-right-up-line"></i>
-            </div>
+            </button>
              <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/portfolio/depositprev-progressive.jpg" alt="" srcset="" />
               <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
                   <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
@@ -254,9 +254,9 @@ export function LandingPageContent() {
               </div>
         </div>
         <div className='work' ref={el => workRefs.current.push(el)} style={{height:"90vh", width:"33vw", position:'absolute', right:"11%",top:"1440vh", overflow:"hidden" }}>
-        <div className='cursor' >
+        <button className='cursor' >
                <i class="ri-arrow-right-up-line"></i>
-            </div>
+            </button>
              <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/portfolio/depositprev-progressive.jpg" alt="" srcset="" />
               <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
                   <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
