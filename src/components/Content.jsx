@@ -3,8 +3,13 @@ import "../App.css"
 import Marquee from "./Marquee"
 import { motion } from "framer-motion"
 import MagneticButton from "./MagneticButton"
+import { useState } from "react"
+
+import { Cursor } from 'react-creative-cursor';
+import 'react-creative-cursor/dist/styles.css';
 
 export function LandingPageContent() {
+  const [cardHovered, setCardHovered] = useState(false)
   return (
     <>
       <Scroll html style={{ width: '100%', height:'100%' }}>
@@ -155,46 +160,13 @@ export function LandingPageContent() {
         <div style={{width: "100%", textAlign:'center',position: 'absolute', top: `1160vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '10.3em' }}>
         Recent Works
         </div>
-        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:"35%",bottom:"-30%", overflow:"hidden", top: "1180vh" }}>
-             <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/project/Alef/alef-preview.jpg" alt="" srcset="" />
-              <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
-                  <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
-                  <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
-                   <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
-              </div>
-        </div> 
-        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:"9%", overflow:"hidden", top: "1280vh" }}>
-             <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/project/ProtoHomes/protohome-cover-min.jpg" alt="" srcset="" />
-              <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
-                  <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
-                  <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
-                   <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
-              </div>
-        </div>
-        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', right:"11%",top:"1320vh", overflow:"hidden" }}>
-             <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/portfolio/depositprev-progressive.jpg" alt="" srcset="" />
-              <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
-                  <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
-                  <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
-                   <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
-              </div>
-        </div>
-        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:"9%", top: "1390vh", overflow:"hidden" }}>
-             <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/portfolio/depositprev-progressive.jpg" alt="" srcset="" />
-              <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
-                  <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
-                  <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
-                   <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
-              </div>
-        </div>
-        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', right:"11%",top:"1440vh", overflow:"hidden" }}>
-             <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/portfolio/depositprev-progressive.jpg" alt="" srcset="" />
-              <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
-                  <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
-                  <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
-                   <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
-              </div>
-        </div>
+        <Cursor cursorBackgrounColor="#c24040" />
+        <WorkCard top="1180vh" left="35%" bottom="-30%" right="" img="https://advanced.team/image/project/Alef/alef-preview.jpg" />
+        <WorkCard top="1280vh" left="" bottom="" right="" img="https://advanced.team/image/project/ProtoHomes/protohome-cover-min.jpg" />
+        <WorkCard top="1320vh" left="" bottom="" right="11%" img="https://advanced.team/image/portfolio/depositprev-progressive.jpg" />
+        <WorkCard top="1390vh" left="9%" bottom="" right="" img="https://advanced.team/image/portfolio/depositprev-progressive.jpg" />
+        <WorkCard top="1440vh" left="" bottom="" right="11%" img="https://advanced.team/image/portfolio/depositprev-progressive.jpg" />
+
         <div className="marquee" style={{ width: "100%", position: 'absolute', top: `1560vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '4em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <Marquee first={"Awards"} second={"Recognition"}/>
         </div>
@@ -273,5 +245,19 @@ export function LandingPageContent() {
       </Scroll>
       
     </>
+  )
+}
+
+
+function WorkCard({top, left, bottom, right, img}){
+  return(
+    <div data-cursor-size="180px" data-cursor-color="#c24040" data-cursor-text="Read More..." className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:left,bottom:bottom, overflow:"hidden", top:top , right: right }}>
+        <img style={{objectFit:"cover", width:"100%", height:"81%"}} src={img} alt="" srcset="" />
+        <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
+            <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
+            <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
+              <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
+        </div>
+    </div>
   )
 }

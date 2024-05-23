@@ -9,10 +9,14 @@ import { LandingPageContent } from './components/Content'
 
 import "./App.css"
 
+import { Cursor } from 'react-creative-cursor';
+import 'react-creative-cursor/dist/styles.css';
+
 
 function App() {
   return (
     <>
+          <Cursor cursorSize={48} cursorBackgrounColor="#c24040" />
           <Canvas 
           className='canvas'
           style={{
@@ -47,7 +51,7 @@ function App() {
 
               <LandingPage />
 
-                {/* <Preload /> */}
+                <Preload />
             </ScrollControls>
           </Canvas>
     </>
