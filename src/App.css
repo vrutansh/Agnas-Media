@@ -133,3 +133,22 @@
 .text-content{
     position: inherit;
 }
+
+
+.cursor{
+    height: 7.3vw;
+    width: 7.3vw;
+    background-color: rgb(251, 43, 43);
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50%
+}
+
+.cursor i{
+    font-size: 4.4em;
+    color: snow;
+
+}

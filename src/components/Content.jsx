@@ -2,9 +2,62 @@ import { Scroll } from "@react-three/drei"
 import "../App.css"
 import Marquee from "./Marquee"
 import { motion } from "framer-motion"
+import { useEffect, useRef } from "react"
+import { gsap } from "gsap";
 import MagneticButton from "./MagneticButton"
 
 export function LandingPageContent() {
+  const workRefs = useRef([]);
+  const cursorRef = useRef();
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const cursorRef = e.target.querySelector('.cursor');
+      const rect = e.target.getBoundingClientRect();
+      const offsetX = e.clientX - rect.left;
+      const offsetY = e.clientY - rect.top;
+
+      gsap.to(cursorRef, {
+        x: offsetX,
+        y: offsetY,
+        overwrite: true,
+      });
+    };
+
+    const handleMouseEnter = (e) => {
+      const cursorRef = e.target.querySelector('.cursor');
+      gsap.to(cursorRef, {
+        scale: 1,
+        opacity: 1,
+      });
+      e.target.addEventListener("mousemove", handleMouseMove);
+    };
+
+    const handleMouseLeave = (e) => {
+      const cursorRef = e.target.querySelector('.cursor');
+      gsap.to(cursorRef, {
+        scale: 0,
+        opacity: 0,
+      });
+      e.target.removeEventListener("mousemove", handleMouseMove);
+    };
+
+    workRefs.current.forEach((work) => {
+      work.addEventListener("mouseenter", handleMouseEnter);
+      work.addEventListener("mouseleave", handleMouseLeave);
+      // Set initial state
+      gsap.set(work.querySelector('.cursor'), {
+        scale: 0,
+        opacity: 0,
+      });
+    });
+
+    return () => {
+      workRefs.current.forEach((work) => {
+        work.removeEventListener("mouseenter", handleMouseEnter);
+        work.removeEventListener("mouseleave", handleMouseLeave);
+      });
+    };
+  }, []);                      
   return (
     <>
       <Scroll html style={{ width: '100%', height:'100%' }}>
@@ -48,7 +101,7 @@ export function LandingPageContent() {
             on Aesthetics
           </motion.span>
         </motion.div>
-
+  
 
         <div id="menu-bar" style={{top:'8vh', position: 'absolute', display: 'flex', color: 'white', right: '4em', width: '20vw', justifyContent: 'space-between'}}>
           <p>Portfolio</p>
@@ -67,6 +120,7 @@ export function LandingPageContent() {
         </div>
 
         <div className="marquee" style={{ width: "100%", position: 'absolute', top: `550vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '4em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        
           <Marquee first={"Showreel"} second={"Showreel"}/>
         </div>
 
@@ -155,7 +209,10 @@ export function LandingPageContent() {
         <div style={{width: "100%", textAlign:'center',position: 'absolute', top: `1160vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '10.3em' }}>
         Recent Works
         </div>
-        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:"35%",bottom:"-30%", overflow:"hidden", top: "1180vh" }}>
+        <div className='work' ref={el => workRefs.current.push(el)} style={{height:"90vh", width:"33vw", position:'absolute', left:"35%",bottom:"-30%", overflow:"hidden", top: "1180vh" }}>
+            <div className='cursor' >
+               <i class="ri-arrow-right-up-line"></i>
+            </div>
              <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/project/Alef/alef-preview.jpg" alt="" srcset="" />
               <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
                   <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
@@ -163,7 +220,10 @@ export function LandingPageContent() {
                    <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
               </div>
         </div> 
-        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:"9%", overflow:"hidden", top: "1280vh" }}>
+        <div className='work'  ref={el => workRefs.current.push(el)} style={{height:"90vh", width:"33vw", position:'absolute', left:"9%", overflow:"hidden", top: "1280vh" }}>
+        <div className='cursor' >
+               <i class="ri-arrow-right-up-line"></i>
+            </div>
              <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/project/ProtoHomes/protohome-cover-min.jpg" alt="" srcset="" />
               <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
                   <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
@@ -171,7 +231,10 @@ export function LandingPageContent() {
                    <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
               </div>
         </div>
-        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', right:"11%",top:"1320vh", overflow:"hidden" }}>
+        <div className='work'  ref={el => workRefs.current.push(el)} style={{height:"90vh", width:"33vw", position:'absolute', right:"11%",top:"1320vh", overflow:"hidden" }}>
+        <div className='cursor' >
+               <i class="ri-arrow-right-up-line"></i>
+            </div>
              <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/portfolio/depositprev-progressive.jpg" alt="" srcset="" />
               <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
                   <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
@@ -179,7 +242,10 @@ export function LandingPageContent() {
                    <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
               </div>
         </div>
-        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:"9%", top: "1390vh", overflow:"hidden" }}>
+        <div className='work'  ref={el => workRefs.current.push(el)} style={{height:"90vh", width:"33vw", position:'absolute', left:"9%", top: "1390vh", overflow:"hidden" }}>
+        <div className='cursor' >
+               <i class="ri-arrow-right-up-line"></i>
+            </div>
              <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/portfolio/depositprev-progressive.jpg" alt="" srcset="" />
               <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
                   <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
@@ -187,7 +253,10 @@ export function LandingPageContent() {
                    <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
               </div>
         </div>
-        <div className='work' style={{height:"90vh", width:"33vw", position:'absolute', right:"11%",top:"1440vh", overflow:"hidden" }}>
+        <div className='work' ref={el => workRefs.current.push(el)} style={{height:"90vh", width:"33vw", position:'absolute', right:"11%",top:"1440vh", overflow:"hidden" }}>
+        <div className='cursor' >
+               <i class="ri-arrow-right-up-line"></i>
+            </div>
              <img style={{objectFit:"cover", width:"100%", height:"81%"}} src="https://advanced.team/image/portfolio/depositprev-progressive.jpg" alt="" srcset="" />
               <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
                   <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
@@ -195,6 +264,11 @@ export function LandingPageContent() {
                    <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
               </div>
         </div>
+
+
+
+
+        
         <div className="marquee" style={{ width: "100%", position: 'absolute', top: `1560vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '4em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <Marquee first={"Awards"} second={"Recognition"}/>
         </div>
