@@ -79,7 +79,7 @@
 .para3{
     display: flex; 
     align-items: center; 
-    position: absolute; 
+    /* position: absolute;  */
     right: 3em; 
     flex-direction: column;
     width: 80%;
@@ -87,13 +87,36 @@
     line-height: 1.6em;
     border-bottom: solid 2px white;
     padding-bottom: 50px;
-    transform: translate3d(0,-100%,0); 
+    /* transform: translate3d(0,-100%,0);  */
     color: white; 
 }
 
 .para3 p{
     text-align: start;
     font-size: 1.3em;
+}
+
+.my-button {
+    /* background-color: #FFF; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 12vw;
+    width: 12vw;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.my-button:hover{
+    background-color: white;
+    color: black;
+}
+
+.my-button:hover path{
+    stroke: black;
 }
 
 .marquee{
