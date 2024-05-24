@@ -251,7 +251,7 @@ export function LandingPageContent() {
 
 function WorkCard({top, left, bottom, right, img}){
   return(
-    <div data-cursor-size="180px" data-cursor-color="#c24040" data-cursor-text="Read More..." className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:left,bottom:bottom, overflow:"hidden", top:top , right: right }}>
+    <div data-cursor-text="Read More..." data-cursor-size="180px" data-cursor-color="#c24040" className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:left,bottom:bottom, overflow:"hidden", top:top , right: right }}>
         <img style={{objectFit:"cover", width:"100%", height:"81%"}} src={img} alt="" srcset="" />
         <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
             <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>

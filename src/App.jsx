@@ -16,7 +16,7 @@ import 'react-creative-cursor/dist/styles.css';
 function App() {
   return (
     <>
-          <Cursor cursorSize={1} cursorBackgrounColor="#c24040" />
+          <Cursor cursorSize={0.1} cursorBackgrounColor="#c24040" />
           <Canvas 
           className='canvas'
           style={{

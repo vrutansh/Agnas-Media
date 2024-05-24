@@ -1,7 +1,7 @@
 import { forwardRef, useEffect, useLayoutEffect, useRef, useState } from "react"
 import { SRGBColorSpace } from "three"
 import gsap from "gsap"
-import { useScroll } from "@react-three/drei";
+import { Html, Text, useScroll } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 
@@ -52,15 +52,24 @@ export const ShowreelVideo = forwardRef((props, forwardRef) => {
 
   
   return (
-    <mesh ref={ref} rotation={[-0.12, -Math.PI, 0]} position={[0, 0.5, -20]} {...props}>
-      <planeGeometry args={[16, 10]} />
-      <meshBasicMaterial>
-        <videoTexture attach="map" args={[video]} colorSpace={SRGBColorSpace} />
-      </meshBasicMaterial>
-      <mesh scale={[16.05, 10.05, 1]} position={[0, 0, -0.01]}>
-        <planeGeometry />
-        <meshBasicMaterial color="black" />
+    <group ref={ref} rotation={[-0.12, -Math.PI, 0]} position={[0, 0.5, -20]}>
+      <mesh scale={[16.05, 10.05, 1]} position={[0, 0, 0.8]} onClick={()=>{window.open("https://www.youtube.com/watch?v=4k1ty5U4Hi4")}}>
+          <circleGeometry args={[0.08, 32, 0, 6.283185307179586]} />
+          <meshBasicMaterial color="#c24040" />
+          <Text scale={0.01} position={[0, 0, 0.7]}>
+            Full Video
+          </Text>
+        </mesh>
+      <mesh  {...props}>
+        <planeGeometry args={[16, 10]} />
+        <meshBasicMaterial>
+          <videoTexture attach="map" args={[video]} colorSpace={SRGBColorSpace} />
+        </meshBasicMaterial>
+        <mesh scale={[16.05, 10.05, 1]} position={[0, 0, -0.01]}>
+          <planeGeometry />
+          <meshBasicMaterial color="black" />
+        </mesh>
       </mesh>
-    </mesh>
+    </group>
   )
 })
