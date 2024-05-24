@@ -160,9 +160,9 @@ export function LandingPageContent() {
         <div style={{width: "100%", textAlign:'center',position: 'absolute', top: `1160vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '10.3em' }}>
         Recent Works
         </div>
-        <Cursor cursorBackgrounColor="#c24040" />
+        <Cursor cursorSize={0} cursorBackgrounColor="#c24040" />
         <WorkCard top="1180vh" left="35%" bottom="-30%" right="" img="https://advanced.team/image/project/Alef/alef-preview.jpg" />
-        <WorkCard top="1280vh" left="" bottom="" right="" img="https://advanced.team/image/project/ProtoHomes/protohome-cover-min.jpg" />
+        <WorkCard top="1280vh" left="9%" bottom="" right="" img="https://advanced.team/image/project/ProtoHomes/protohome-cover-min.jpg" />
         <WorkCard top="1320vh" left="" bottom="" right="11%" img="https://advanced.team/image/portfolio/depositprev-progressive.jpg" />
         <WorkCard top="1390vh" left="9%" bottom="" right="" img="https://advanced.team/image/portfolio/depositprev-progressive.jpg" />
         <WorkCard top="1440vh" left="" bottom="" right="11%" img="https://advanced.team/image/portfolio/depositprev-progressive.jpg" />
