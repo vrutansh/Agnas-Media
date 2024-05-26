@@ -4,7 +4,6 @@ import { useEffect, useLayoutEffect, useRef } from "react";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import gsap from "gsap";
 
-import mailLogo from "../assets/images/mail-logo2.png"
 
 export function FooterModel(props) {
   const ref = useRef()
