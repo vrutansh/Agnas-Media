@@ -1,15 +1,16 @@
 import { Scroll } from "@react-three/drei"
 import "../App.css"
 import Marquee from "./Marquee"
-import { motion } from "framer-motion"
+import { motion, useAnimation, useInView } from "framer-motion"
 import MagneticButton from "./MagneticButton"
-import { useState } from "react"
+import { useRef, useState } from "react"
 
 import { Cursor } from 'react-creative-cursor';
 import 'react-creative-cursor/dist/styles.css';
 
 export function LandingPageContent() {
-  const [cardHovered, setCardHovered] = useState(false)
+  const ref = useRef(null);
+  const inView = useInView(ref, { triggerOnce: true, threshold: 0.1 });
   return (
     <>
       <Scroll html style={{ width: '100%', height:'100%' }}>
@@ -250,14 +251,26 @@ export function LandingPageContent() {
 
 
 function WorkCard({top, left, bottom, right, img}){
+  const ref = useRef(null);
+  const inView = useInView(ref, { triggerOnce: true, threshold: 0.1 });
   return(
-    <div data-cursor-text="Read More..." data-cursor-size="180px" data-cursor-color="#c24040" className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:left,bottom:bottom, overflow:"hidden", top:top , right: right }}>
+    // <div data-cursor-text="Read More..." data-cursor-size="180px" data-cursor-color="#c24040" className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:left,bottom:bottom, overflow:"hidden", top:top , right: right }}>
+    //     <img style={{objectFit:"cover", width:"100%", height:"81%"}} src={img} alt="" srcset="" />
+    //     <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
+    //         <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
+    //         <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
+    //           <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
+    //     </div>
+    // </div>
+    <motion.div ref={ref} initial={{ opacity: 0 }}
+    animate={inView ? { opacity: 1, transition: { duration: 1.2 } } : { opacity: 0 }}
+     whileHover={{y:-26, transition:{duration:0.4}}} data-cursor-text="Read More..." data-cursor-size="180px" data-cursor-color="#c24040" className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:left,bottom:bottom, overflow:"hidden", top:top , right: right, }}>
         <img style={{objectFit:"cover", width:"100%", height:"81%"}} src={img} alt="" srcset="" />
         <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
-            <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
+            <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%", }} >Alef Estate</h3>
             <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
               <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
         </div>
-    </div>
+     </motion.div>
   )
 }
