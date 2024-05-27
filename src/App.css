@@ -64,6 +64,15 @@
     justify-content: space-between;
 }
 
+.menu-links{
+    text-decoration: none;
+    color: rgb(177, 152, 152);
+}
+
+.menu-links:hover{
+    color: white;
+}
+
 .para2{
     width: 50%; 
     position: absolute; 

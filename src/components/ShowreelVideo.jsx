@@ -7,6 +7,7 @@ import { useFrame } from "@react-three/fiber";
 
 export const ShowreelVideo = forwardRef((props, forwardRef) => {
   const ref = useRef();
+  const textRef = useRef();
   const tl = useRef();
   const scroll = useScroll();
 
@@ -28,7 +29,7 @@ export const ShowreelVideo = forwardRef((props, forwardRef) => {
           },
           0
         );
-        // LOGO ANIMATION
+        
         tl.current.to(
           ref.current.position,
           {
@@ -48,6 +49,15 @@ export const ShowreelVideo = forwardRef((props, forwardRef) => {
           ">0.06"
         );
 
+        tl.current.to(
+          textRef.current, 
+          { 
+            fillOpacity: 1,
+            duration: 0.5,
+          }, 
+          0
+        );
+
       }, [])
 
   
@@ -56,7 +66,7 @@ export const ShowreelVideo = forwardRef((props, forwardRef) => {
       <mesh scale={10} position={[0, 0, 0.2]} onClick={()=>{window.open("https://www.youtube.com/watch?v=4k1ty5U4Hi4")}}>
           <circleGeometry args={[0.08, 42]} />
           <meshBasicMaterial color="#c24040" />
-          <Text scale={0.02} position={[0, 0, 0.01]}>
+          <Text ref={textRef} fillOpacity={0} scale={0.02} position={[0, 0, 0.01]}>
             Full Video
           </Text>
         </mesh>

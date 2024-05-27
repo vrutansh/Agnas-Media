@@ -57,10 +57,10 @@ export function LandingPageContent() {
 
 
         <div id="menu-bar" style={{top:'8vh', position: 'absolute', display: 'flex', color: 'white', right: '4em', width: '20vw', justifyContent: 'space-between'}}>
-          <p>Portfolio</p>
-          <p>Agency</p>
-          <p>Services</p>
-          <p>Contact</p> 
+          <p><a className="menu-links" href="#">Portfolio</a></p>
+          <p><a className="menu-links" href="#">Agency</a></p>
+          <p><a className="menu-links" href="#">Services</a></p>
+          <p><a className="menu-links" href="#">Contact</a></p> 
           <p></p>
         </div>
 
