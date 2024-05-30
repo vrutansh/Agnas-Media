@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 
-import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
+import { Outlet } from "react-router-dom";
+
+import { OrbitControls, PerspectiveCamera, ScrollControls } from '@react-three/drei'
 
 import { ALogo } from './ALogo'
 import { ShowreelVideo } from './ShowreelVideo'
@@ -9,6 +11,7 @@ import { FooterModel } from './FooterModel'
 import { useFrame } from '@react-three/fiber'
 
 import { easing } from 'maath'
+import { LandingPageContent } from './Content'
 
 function LandingPage() {
 
@@ -47,6 +50,9 @@ function LandingPage() {
 
   return (
     <>
+    <ScrollControls pages={20}>
+      <LandingPageContent />
+
       <PerspectiveCamera makeDefault fov={100} position={[0, 0, 11]} />
   
       <spotLight
@@ -61,6 +67,9 @@ function LandingPage() {
       <ShowreelVideo />
       <WorkScroller />
       <FooterModel />
+    </ScrollControls>
+
+    <Outlet />
 
     </>
   )
