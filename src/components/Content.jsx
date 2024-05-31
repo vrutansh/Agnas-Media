@@ -5,7 +5,7 @@ import { motion, useAnimation, useInView } from "framer-motion"
 import MagneticButton from "./MagneticButton"
 import { useRef, useState } from "react"
 
-import { Link } from "react-router-dom";
+import { Link } from "wouter";
 
 import { Cursor } from 'react-creative-cursor';
 import 'react-creative-cursor/dist/styles.css';
@@ -59,11 +59,9 @@ export function LandingPageContent() {
 
 
         <div id="menu-bar" style={{top:'8vh', position: 'absolute', display: 'flex', color: 'white', right: '4em', width: '20vw', justifyContent: 'space-between'}}>
-          <Link to="/portfolio"><p><a className="menu-links" href="#">Portfolio</a></p></Link>
-          <Link to="Agency"><p><a className="menu-links" href="#">Agency</a></p></Link>
-          {/* <p><a className="menu-links" href="#">Services</a></p> */}
-          <Link to="/contact-us"><p><a className="menu-links" href="#">Contact</a></p> </Link>
-          <p></p>
+          <Link to="/portfolio" className="menu-links"><p>Portfolio</p></Link>
+          <Link to="/agency" className="menu-links"><p>Agency</p></Link>
+          <Link to="/contact-us" className="menu-links"><p>Contact</p></Link>
         </div>
 
         <div className="para1" style={{ position: 'absolute', top: `90vh`, left: '11vw', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.1em', lineHeight: '1.8em', fontWeight: '300'  }}>

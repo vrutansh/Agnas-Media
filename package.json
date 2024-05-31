@@ -22,7 +22,8 @@
     "react-creative-cursor": "^1.2.7",
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.6.4",
-    "three": "^0.164.1"
+    "three": "^0.164.1",
+    "wouter": "^3.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
