@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 
-import { Outlet } from "react-router-dom";
-
 import { OrbitControls, PerspectiveCamera, ScrollControls } from '@react-three/drei'
 
 import { ALogo } from './ALogo'
@@ -68,8 +66,6 @@ function LandingPage() {
       <WorkScroller />
       <FooterModel />
     </ScrollControls>
-
-    <Outlet />
 
     </>
   )
