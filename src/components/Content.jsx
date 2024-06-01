@@ -9,6 +9,7 @@ import { Link } from "wouter";
 
 import { Cursor } from 'react-creative-cursor';
 import 'react-creative-cursor/dist/styles.css';
+import logoname from '../assets/images/agnas-media---logo-white.png'
 
 export function LandingPageContent() {
   const ref = useRef(null);
@@ -29,7 +30,7 @@ export function LandingPageContent() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2, delay: 0.2 }}
           >
-            Agnas Media <span id="registered">®</span>  <br />
+            <img src={logoname} /> <span id="registered">®</span>  <br />
           </motion.span>
           <motion.span
             className="heading-text"
@@ -37,7 +38,7 @@ export function LandingPageContent() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2, delay: 0.4 }}
           >
-            Digital Design <br />
+            Defining Brand<br />
           </motion.span>
           <motion.span
             className="heading-text"
@@ -45,7 +46,7 @@ export function LandingPageContent() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2, delay: 0.6 }}
           >
-            Boutique with Focus <br />
+            Experiences By <br />
           </motion.span>
           <motion.span
             className="heading-text"
@@ -53,7 +54,7 @@ export function LandingPageContent() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2, delay: 0.8 }}
           >
-            on Aesthetics
+            Visual Detailing
           </motion.span>
         </motion.div>
 
@@ -64,7 +65,7 @@ export function LandingPageContent() {
           <Link to="/contact-us" className="menu-links"><p>Contact</p></Link>
         </div>
 
-        <div className="para1" style={{ position: 'absolute', top: `90vh`, left: '11vw', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.1em', lineHeight: '1.8em', fontWeight: '300'  }}>
+        <div className="para1" style={{ position: 'absolute', top: `90vh`, left: '20vw', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.2em', lineHeight: '1.8em', fontWeight: '300'  }}>
         We pride ourselves on our ability to craft digital products that <br />
         not only meet but exceed the expectations of our clients. <br />
         With a wealth of experience and expertise in the field of <br />
@@ -78,8 +79,8 @@ export function LandingPageContent() {
 
         <div className="para2" style={{top:'880vh'}}>
           <p>
-            Every project made by advanced 
-            team is created at the intersection
+            Every project made by agnas 
+            media is created at the intersection
             between design and technology,
             making the future — today
           </p>
@@ -111,13 +112,15 @@ export function LandingPageContent() {
         <div style={{ width:'100%', display: 'flex' ,position: 'absolute', top: `1020vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.2em', alignItems: 'center', justifyContent: 'center'}}>
           <div style={{width: '60%'}}>
             <p >Our services:</p>
-            <div style={{fontSize: '7em' }}>
-            UX Strategy<br />
-            UI Design <br />
-            Development <br />
-            Communication<br />
-            Example<br />
-            Example<br />
+            <div style={{fontSize: '5.5em', lineHeight:'1.2em' }}>
+            UI/UX Design & Strategy<br />
+            <i>Art Direction</i><br />
+            Web & Mobile Design<br />
+            <i>Content Production</i><br />
+            Motion Design<br />
+            <i>Branding & Packaging</i><br /> 
+            Social & Brand PR<br />
+            <i>Front-End & Back-End Development</i>
             </div>
           </div>
         </div>
@@ -171,7 +174,7 @@ export function LandingPageContent() {
         <div className="marquee" style={{ width: "100%", position: 'absolute', top: `1560vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '4em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <Marquee first={"Awards"} second={"Recognition"}/>
         </div>
-        <div style={{ position: 'absolute', top: `1610vh`, left: '14vw', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.7em', width:'54vw', lineHeight:'3.7vw'}}>
+        <div className="para4-b">
         <h1 style={{}}>We are proud to be the 2019 "Studio of the Year" at the CSS Design Awards.Our project was also honored as "E-Commerce of the Year" by the Awwwards in 2022.</h1>
        </div>
        <div style={{ display: 'flex',flexDirection:'column',width: '50%', position: 'absolute', top: `1650vh`, right: '0', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.3em' }}>
