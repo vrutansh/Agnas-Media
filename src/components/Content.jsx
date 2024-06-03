@@ -16,68 +16,73 @@ export function LandingPageContent() {
   const inView = useInView(ref, { triggerOnce: true, threshold: 0.1 });
   return (
     <>
-      <Scroll html style={{ width: '100%', height:'100%' }}>
+      <Scroll html style={{ width: '100%', height:'100%' }} className="main-wrapper">
 
-        <motion.div
-          className="heading"
-          initial={{ rotate: -15, y: '-55%', opacity: 0 }}
-          whileInView={{ rotate: 0, y: 0, opacity: 1 }}
-          transition={{ ease: [0.22, 1, 0.36, 1], duration: 2, delay: 0 }}
-        >
-          <motion.span
-          className="heading-text"
-            initial={{ opacity: 0, y: '-15px' }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.2, delay: 0.2 }}
-          >
-            <img src={logoname} /> <span id="registered">®</span>  <br />
-          </motion.span>
-          <motion.span
-            className="heading-text"
-            initial={{ opacity: 0, y: '-15px' }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.2, delay: 0.4 }}
-          >
-            Defining Brand<br />
-          </motion.span>
-          <motion.span
-            className="heading-text"
-            initial={{ opacity: 0, y: '-15px' }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.2, delay: 0.6 }}
-          >
-            Experiences By <br />
-          </motion.span>
-          <motion.span
-            className="heading-text"
-            initial={{ opacity: 0, y: '-15px' }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.2, delay: 0.8 }}
-          >
-            Visual Detailing
-          </motion.span>
-        </motion.div>
+        <div className="hero-wrapper">
+                <motion.div
+                  className="heading"
+                  initial={{ rotate: -15, y: '-55%', opacity: 0 }}
+                  whileInView={{ rotate: 0, y: 0, opacity: 1 }}
+                  transition={{ ease: [0.22, 1, 0.36, 1], duration: 2, delay: 0 }}
+                >
+                  <motion.span
+                  className="heading-text"
+                    initial={{ opacity: 0, y: '-15px' }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.2, delay: 0.2 }}
+                  >
+                    <img src={logoname} className="main-logo" /> <span id="registered">®</span>  <br />
+                  </motion.span>
+                  <motion.span
+                    className="heading-text"
+                    initial={{ opacity: 0, y: '-15px' }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.2, delay: 0.4 }}
+                  >
+                    Unforgettable <br />
+                  </motion.span>
+                  <motion.span
+                    className="heading-text"
+                    initial={{ opacity: 0, y: '-15px' }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.2, delay: 0.6 }}
+                  >
+                    Products & Journeys <br />
+                  </motion.span>
+                  <motion.span
+                    className="heading-text"
+                    initial={{ opacity: 0, y: '-15px' }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.2, delay: 0.8 }}
+                  >
+                   That Drive Growth & Engagement
+                  </motion.span>
+                </motion.div>
 
 
-        <div id="menu-bar" style={{top:'8vh', position: 'absolute', display: 'flex', color: 'white', right: '4em', width: '20vw', justifyContent: 'space-between'}}>
-          <Link to="/portfolio" className="menu-links"><p>Portfolio</p></Link>
-          <Link to="/agency" className="menu-links"><p>Agency</p></Link>
-          <Link to="/contact-us" className="menu-links"><p>Contact</p></Link>
+                <div id="menu-bar">
+                  <Link to="/portfolio" className="menu-links"><p>Portfolio</p></Link>
+                  <Link to="/agency" className="menu-links"><p>Agency</p></Link>
+                  <Link to="/contact-us" className="menu-links"><p>Contact</p></Link>
+                </div>
+
+                <div className="para1" style={{ color:'white', fontSize: '1.2em', lineHeight: '1.8em', fontWeight: '300'  }}>
+                <p>
+                We pride ourselves on our ability to craft digital products that 
+                not only meet but exceed the expectations of our clients.
+                With a wealth of experience and expertise in the field of 
+                digital product development, we understand how to design
+                user-friendly interfaces that captivate and engage audiences.
+                </p>
+                </div>
+
         </div>
 
-        <div className="para1" style={{ position: 'absolute', top: `90vh`, left: '20vw', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.2em', lineHeight: '1.8em', fontWeight: '300'  }}>
-        We pride ourselves on our ability to craft digital products that <br />
-        not only meet but exceed the expectations of our clients. <br />
-        With a wealth of experience and expertise in the field of <br />
-        digital product development, we understand how to design <br />
-        user-friendly interfaces that captivate and engage audiences.
-        </div>
-
-        <div className="marquee" style={{ width: "100%", position: 'absolute', top: `550vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '4em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div className="marquee">
           <Marquee first={"Showreel"} second={"Showreel"}/>
         </div>
 
-        <div className="para2" style={{top:'880vh'}}>
+        <div className="para2 two">
           <p>
             Every project made by agnas 
             media is created at the intersection
@@ -86,7 +91,7 @@ export function LandingPageContent() {
           </p>
         </div>
 
-        <div style={{width: '100%', position: 'absolute', top: '887vh', display: 'flex', justifyContent: 'space-around', alignItems: 'center'}}>
+        <div className="twox-wrap">
         
           <MagneticButton>
           <div class="my-button">
@@ -109,10 +114,10 @@ export function LandingPageContent() {
           </div>
         </div>
 
-        <div style={{ width:'100%', display: 'flex' ,position: 'absolute', top: `1020vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.2em', alignItems: 'center', justifyContent: 'center'}}>
-          <div style={{width: '60%'}}>
+        <div className="services-main-wrap">
+          <div className="services-wrapper">
             <p >Our services:</p>
-            <div style={{fontSize: '5.5em', lineHeight:'1.2em' }}>
+            <div className="services-list">
             UI/UX Design & Strategy<br />
             <i>Art Direction</i><br />
             Web & Mobile Design<br />
@@ -125,7 +130,7 @@ export function LandingPageContent() {
           </div>
         </div>
         
-        <div className="para2" style={{top: `1080vh` }}>
+        <div className="para2 three" style={{top: `1080vh` }}>
           <p>
             We believe that the power of design,
             creativity, and emotion helps large and
@@ -135,7 +140,7 @@ export function LandingPageContent() {
           </p>
         </div>
         
-        <div style={{width: '100%', position: 'absolute', top: '1090vh', display: 'flex', justifyContent: 'space-around', alignItems: 'center'}}>
+        <div className="we-keep-looking">
         
           <MagneticButton>
             <div class="my-button">
@@ -161,23 +166,22 @@ export function LandingPageContent() {
           </div>
         </div>
 
-        <div style={{width: "100%", textAlign:'center',position: 'absolute', top: `1160vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '10.3em' }}>
+        <div className="recent-works-head">
         Recent Works
         </div>
         <Cursor cursorSize={0} cursorBackgrounColor="#c24040" />
-        <WorkCard top="1180vh" left="35%" bottom="-30%" right="" img="https://advanced.team/image/project/Alef/alef-preview.jpg" />
-        <WorkCard top="1280vh" left="9%" bottom="" right="" img="https://advanced.team/image/project/ProtoHomes/protohome-cover-min.jpg" />
-        <WorkCard top="1320vh" left="" bottom="" right="11%" img="https://advanced.team/image/portfolio/depositprev-progressive.jpg" />
-        <WorkCard top="1390vh" left="9%" bottom="" right="" img="https://advanced.team/image/portfolio/depositprev-progressive.jpg" />
-        <WorkCard top="1440vh" left="" bottom="" right="11%" img="https://advanced.team/image/portfolio/depositprev-progressive.jpg" />
+        <WorkCard customClass="work-card-1" img="https://advanced.team/image/project/Alef/alef-preview.jpg" heading="Test Title" description="This is a test" />
+        <WorkCard customClass="work-card-2" img="https://advanced.team/image/project/ProtoHomes/protohome-cover-min.jpg" heading="Test Title" description="This is a test" />
+        <WorkCard customClass="work-card-3" img="https://advanced.team/image/portfolio/depositprev-progressive.jpg" heading="Test Title" description="This is a test" />
+        <WorkCard customClass="work-card-4" img="https://advanced.team/image/portfolio/depositprev-progressive.jpg" heading="Test Title" description="This is a test" />
 
-        <div className="marquee" style={{ width: "100%", position: 'absolute', top: `1560vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '4em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div className="marquee awards">
           <Marquee first={"Awards"} second={"Recognition"}/>
         </div>
         <div className="para4-b">
         <h1 style={{}}>We are proud to be the 2019 "Studio of the Year" at the CSS Design Awards.Our project was also honored as "E-Commerce of the Year" by the Awwwards in 2022.</h1>
        </div>
-       <div style={{ display: 'flex',flexDirection:'column',width: '50%', position: 'absolute', top: `1650vh`, right: '0', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.3em' }}>
+       <div className="awwards-one">
             <div style={{fontSize:'1.5em', display: 'flex', width: '90%', justifyContent: 'space-between'}}><div>Awwwards</div>  <div>34</div></div>
             <svg style={{ width:'90%',marginTop:'2em'}} width="100%" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <line x1="0" y1="0" x2="100%" y2="0" stroke="white" strokeWidth="4" />
@@ -188,7 +192,7 @@ export function LandingPageContent() {
             <div style={{display: 'flex', width: '90%', justifyContent: 'space-between', marginTop: '0.5em', marginBottom: '0.5em'}}><div>Ecommerce of the year </div>  <div>05</div></div>
             <div style={{display: 'flex', width: '90%', justifyContent: 'space-between', marginTop: '0.5em', marginBottom: '0.5em'}}><div>Mobile of the Week</div>  <div>01</div></div>
        </div>
-       <div style={{ display: 'flex',flexDirection:'column',width: '50%', position: 'absolute', top: `1685vh`, right: '0', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.3em' }}>
+       <div className="awwards-two">
             <div style={{fontSize:'1.5em', display: 'flex', width: '90%', justifyContent: 'space-between'}}><div>The CSS Design Awards</div>  <div>34</div></div>
             <svg style={{ width:'90%',marginTop:'2em'}} width="100%" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <line x1="0" y1="0" x2="100%" y2="0" stroke="white" strokeWidth="4" />
@@ -199,7 +203,7 @@ export function LandingPageContent() {
             <div style={{display: 'flex', width: '90%', justifyContent: 'space-between', marginTop: '0.5em', marginBottom: '0.5em'}}><div>Ecommerce of the year </div>  <div>05</div></div>
             <div style={{display: 'flex', width: '90%', justifyContent: 'space-between', marginTop: '0.5em', marginBottom: '0.5em'}}><div>Mobile of the Week</div>  <div>01</div></div>
        </div>
-       <div style={{ display: 'flex',flexDirection:'column',width: '50%', position: 'absolute', top: `1725vh`, right: '0', transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '1.3em' }}>
+       <div className="awwards-three">
             <div style={{fontSize:'1.5em', display: 'flex', width: '90%', justifyContent: 'space-between'}}><div>The FWA</div>  <div>34</div></div>
             <svg style={{ width:'90%',marginTop:'2em'}} width="100%" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <line x1="0" y1="0" x2="100%" y2="0" stroke="white" strokeWidth="4" />
@@ -210,27 +214,27 @@ export function LandingPageContent() {
             <div style={{display: 'flex', width: '90%', justifyContent: 'space-between', marginTop: '0.5em', marginBottom: '0.5em'}}><div>Ecommerce of the year </div>  <div>05</div></div>
             <div style={{display: 'flex', width: '90%', justifyContent: 'space-between', marginTop: '0.5em', marginBottom: '0.5em'}}><div>Mobile of the Week</div>  <div>01</div></div>
        </div>
-       <div className="marquee" style={{ width: "100%", position: 'absolute', top: `1946vh`, transform: `translate3d(0,-100%,0)`, color:'white', fontSize: '4em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+       <div className="marquee contact">
           <Marquee first={"Contact Us"} second={"Let's Talk"}/>
         </div>
-       <div style={{width:'100%',position: 'absolute', padding:'1vw', display:'flex', gap:'2vw', top:'2000vh',transform: `translate3d(0,-100%,0)`, color:'white', fontSize:'0.5vw', lineHeight:'1vw' }}>
+       <div className="footer-wrap">
             <div style={{width:'20%', marginLeft:'1.3vw' }}>
                <h1>Heroes from Ukraine</h1>
                <h1>Main Office</h1>
                <h1>Dnipro, 49000</h1>
-               <h2>hello@agnasmedia.team</h2>
+               <h1>hello@agnasmedia.team</h1>
             </div>
             <div style={{width:'20%', }}>
                <h1>Based in USA</h1>
                <h1>Los Angeles, 90210</h1>
                <h1>California</h1>
-               <h2>la@agnasmedia.team</h2>
+               <h1>la@agnasmedia.team</h1>
             </div>
             <div style={{width:'20%', }}>
                <h1>Support from Poland </h1>
                <h1>Los Angeles, 90210</h1>
                <h1>California</h1>
-               <h2>la@agnasmedia.team</h2>
+               <h1>la@agnasmedia.team</h1>
             </div>
             <div style={{width:'20%', paddingLeft:'2.5vw', marginLeft:'2vw' }}>
               <h1>Facebook</h1>
@@ -239,10 +243,10 @@ export function LandingPageContent() {
               <h1>Behance</h1>
             </div>
             <div style={{width:'20%', marginRight:'2vw' }}>
-              <h2>Business inquiries</h2>
-              <h2>hello@agnasmedia.com</h2>
-              <h2>agnasmedia</h2>
-              <h2>agnasmedia</h2>
+              <h1>Business inquiries</h1>
+              <h1>hello@agnasmedia.com</h1>
+              <h1>agnasmedia</h1>
+              <h1>agnasmedia</h1>
             </div>
        </div>
         
@@ -253,26 +257,18 @@ export function LandingPageContent() {
 }
 
 
-function WorkCard({top, left, bottom, right, img}){
+function WorkCard({customClass, img, heading, description}){
   const ref = useRef(null);
   const inView = useInView(ref, { triggerOnce: true, threshold: 0.1 });
   return(
-    // <div data-cursor-text="Read More..." data-cursor-size="180px" data-cursor-color="#c24040" className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:left,bottom:bottom, overflow:"hidden", top:top , right: right }}>
-    //     <img style={{objectFit:"cover", width:"100%", height:"81%"}} src={img} alt="" srcset="" />
-    //     <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
-    //         <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%"}} >Alef Estate</h3>
-    //         <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
-    //           <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
-    //     </div>
-    // </div>
     <motion.div ref={ref} initial={{ opacity: 0 }}
     animate={inView ? { opacity: 1, transition: { duration: 1.2 } } : { opacity: 0 }}
-     whileHover={{y:-26, transition:{duration:0.4}}} data-cursor-text="Read More..." data-cursor-size="180px" data-cursor-color="#c24040" className='work' style={{height:"90vh", width:"33vw", position:'absolute', left:left,bottom:bottom, overflow:"hidden", top:top , right: right, }}>
-        <img style={{objectFit:"cover", width:"100%", height:"81%"}} src={img} alt="" srcset="" />
-        <div style={{height:"20%", width:"100%",color:"whitesmoke", position:"relative", padding:"0.2vw" }}>
-            <h3 style={{fontSize:"2.5vw",position: "absolute", display:"inline-block", bottom:"30%", }} >Alef Estate</h3>
-            <h5 style={{fontSize:"1vw",position: "absolute", display:"inline-block", bottom:"15%"}}>The site of the day by Awwards
-              <span style={{marginLeft:"15vw", fontSize:"1vw"}}>2021</span></h5>
+     whileHover={{y:-26, transition:{duration:0.4}}} className={'work' + ' ' + customClass}>
+        <img data-cursor-text="Read More..." data-cursor-size="180px" data-cursor-color="#c24040" style={{objectFit:"cover", width:"100%", height:"81%"}} src={img} alt="" srcset="" />
+        <div className="work-text-wrap">
+            <h3>{heading}</h3>
+            <h5>{description}
+              <span className="work-year">2021</span></h5>
         </div>
      </motion.div>
   )
