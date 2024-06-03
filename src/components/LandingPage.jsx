@@ -36,7 +36,8 @@ function LandingPage() {
     return windowDimensions;
   }
   
-  const { height, width } = useWindowDimensions();
+  const { width, height } = useWindowDimensions();
+  console.log(width ,height, Math.floor(height/100)+1)
 
   if (width>500){
     useFrame((state, delta) => {
@@ -48,7 +49,7 @@ function LandingPage() {
 
   return (
     <>
-    <ScrollControls pages={20}>
+    <ScrollControls pages={Math.floor(height/100)+1}>
       <LandingPageContent />
 
       <PerspectiveCamera makeDefault fov={100} position={[0, 0, 11]} />
