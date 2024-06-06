@@ -46,10 +46,12 @@ function LandingPage() {
     })
   }
 
+  const minHeight = 2280
+
 
   return (
     <>
-    <ScrollControls pages={Math.floor(height/100)+1}>
+    <ScrollControls pages={minHeight/100}>
       <LandingPageContent />
 
       <PerspectiveCamera makeDefault fov={100} position={[0, 0, 11]} />

@@ -61,7 +61,7 @@
     font-size: 0.9em;
     max-width: 500px;
     margin-top: 100px;
-    margin-left: 20%;
+    margin-right: 5%;
     line-height: 1.6em;
 }
 
@@ -208,13 +208,15 @@
 
 .marquee{
     width: 100%;
-    color:white;
+    color: white;
     font-size: 4em;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 250vh;
+    padding-top: 130vh;
+    padding-bottom: 400vh;
     float: left;
+    height: 100vh;
 }
 
 .services-wrapper{
@@ -230,7 +232,6 @@
     font-size: 1.2em;
     align-items: center;
     justify-content: center;
-    margin-top: 400px;
 }
 
 .we-keep-looking{
@@ -244,7 +245,6 @@
 
 .para2.two p{
     width: 70%;
-    max-width: 900px;
 }
 
 .twox-wrap{
@@ -259,7 +259,6 @@
     text-align:center;
     color:white;
     font-size: 10.3em;
-    margin-top: 200px;
     float: left;
 }
 
@@ -307,6 +306,12 @@
     display: block;
     float: left;
     min-height: 100vh;
+    position: relative;
+}
+
+.hero-wrapper .para1{
+    position: absolute;
+    bottom: 10%;
 }
 
 .services-list{
@@ -318,7 +323,6 @@
     position: inherit;
     top: inherit;
     font-size: 3.5em;
-    margin-top: 200px;
 }
 
 .para2.three p{
@@ -335,7 +339,7 @@
 }
 
 .work img{
-    width: 40%!important;
+    width: 400px!important;
     min-width: 400px;
     margin: 0 auto;
     display: block;
@@ -349,7 +353,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .marquee.contact{
@@ -359,7 +365,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0px;
+    height: 50vh;
 }
 
 .footer-wrap{
@@ -369,7 +378,7 @@
     color: white;
     font-size: 0.8em;
     line-height: 2em;
-    margin-top: 300px;
+    margin-top:200px;
     float: left;
 }
 
@@ -397,6 +406,80 @@
 .work-year{
     margin-left: 80%;
 }
+
+.home-section-3{
+    height: 150vh;
+    display: block;
+    float: left;
+    padding-top: 150vh;
+    width: 100%;
+}
+
+
+.home-section-4{
+    height: 150vh;
+    display: block;
+    float: left;
+    padding: 20vh 0;
+    width: 100%;
+}
+
+
+.home-section-5{
+    display: block;
+    float: left;
+    height: 150vh;
+    padding: 20vh 0;
+    width: 100%;
+}
+
+.home-section-6{
+    display: block;
+    float: left;
+    height: 420vh;
+    width: 100%;
+}
+
+.home-section-7{
+    display: block;
+    float:left;
+    height: 250vh;
+    width: 100%;
+    width: 100%;
+}
+
+
+.work.work-card-2 img, .work.work-card-2 p{
+    margin-left: 100px;
+}
+
+.work.work-card-3 img, .work.work-card-3 p{
+    margin-right: 100px;
+}
+
+
+.width-wrap{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 1500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

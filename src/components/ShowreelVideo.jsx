@@ -33,7 +33,7 @@ export const ShowreelVideo = forwardRef((props, forwardRef) => {
         tl.current.to(
           ref.current.position,
           {
-            duration: 0.17,
+            duration: 0.12,
             z: 5,
           },
           0
@@ -44,7 +44,7 @@ export const ShowreelVideo = forwardRef((props, forwardRef) => {
           ref.current.position, 
           { 
             y: 35, 
-            duration: 0.5,
+            duration: 0.4,
           }, 
           ">0.06"
         );
