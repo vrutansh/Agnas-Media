@@ -5,13 +5,15 @@ import { Image, Environment, ScrollControls, useScroll, useTexture } from '@reac
 import { easing } from 'maath'
 import '../components/utils'
 import gsap from 'gsap'
+import logo from '../assets/images/agnas-logo.png'
 
 export default function WorkScroller () {
   return(
     <>
-          <Rig rotation={[0, 0, 0.15]} scale={4} position={[0, -100, 20]}>
+          {/* <Rig rotation={[0, 0, 0.15]} scale={4} position={[0, -100, 20]}>
             <Carousel />
-          </Rig>
+          </Rig> */}
+          <Banner position={[0, -0.15, 0]} />
     </>
   )
 }
@@ -81,44 +83,23 @@ function Card({ url, ...props }) {
   )
 }
 
-// function Banner(props) {
-//   const ref = useRef()
-//   const texture = useTexture('/agnas-logo.png')
-//   texture.wrapS = texture.wrapT = THREE.RepeatWrapping
-//   const scroll = useScroll()
-//   const tl = useRef();
-//   useFrame((state, delta) => {
-//     ref.current.material.time.value += Math.abs(scroll.delta) * 4
-//     ref.current.material.map.offset.x += delta / 2
-//     tl.current.seek(scroll.offset * tl.current.duration());
-//   })
+function Banner(props) {
+  const ref = useRef()
+  const texture = useTexture(logo)
+  texture.wrapS = texture.wrapT = THREE.RepeatWrapping
+  const scroll = useScroll()
+  const tl = useRef();
+  useFrame((state, delta) => {
+    // ref.current.material.time.value += Math.abs(scroll.delta) * 4
+    // ref.current.material.map.offset.x += delta / 2
+    tl.current.seek(scroll.offset * tl.current.duration());
+  })
 
-//   useLayoutEffect(() => {
-//     tl.current = gsap.timeline();
 
-//     // LOGO ANIMATION
-//     tl.current.to(
-//       ref.current.position,
-//       {
-//         duration: 100,
-//         y: 0,
-//       },
-//       0
-//     );
-//     tl.current.to(
-//       ref.current.position,
-//       {
-//         duration: 100,
-//         z: -5,
-//       },
-//       0
-//     );
-//   }, []);
-
-//   return (
-//     <mesh ref={ref} {...props}>
-//       <cylinderGeometry args={[10.6, 10.6, 1, 128, 16, true]} />
-//       <meshSineMaterial map={texture} map-anisotropy={16} map-repeat={[30, 1]} side={THREE.DoubleSide} toneMapped={false} />
-//     </mesh>
-//   )
-// }
+  return (
+    <mesh ref={ref} {...props}>
+      <cylinderGeometry args={[10.6, 10.6, 1, 128, 16, true]} />
+      <meshSineMaterial map={texture} map-anisotropy={16} map-repeat={[30, 1]} side={THREE.DoubleSide} toneMapped={false} />
+    </mesh>
+  )
+}
